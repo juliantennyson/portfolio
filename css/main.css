@@ -1,0 +1,502 @@
+*{
+    
+}
+
+hr{
+    border-width: 5px;
+    border-color:#EAE8DB;
+    border-style:solid;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+a:hover{
+    text-decoration:none;
+    color:inherit;
+}
+
+li{
+    list-style:none;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    align-content: center;
+    width:100%;
+    background-color:#f93;
+    font-size:1em;
+    
+}
+
+.projectpage{
+    background-color:white !important;
+}
+
+@keyframes fade {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+    
+#loader{
+    width:100vw;
+    height:100vh;
+    background-color:#f93;
+    position:fixed;
+    animation: fade 2s;
+    opacity: 0;
+    
+}
+#pubctrpg{
+    background-image:url(images/pubctr/ridinlowbannerBLUR.png);
+    background-size:130%;
+    background-position:top;
+    
+}
+
+#makeshiftpg{
+    background-image:url(images/makeshift/makeshiftBLUR.png);
+    background-size:200%;
+    background-position:top;
+}
+
+#albumartpg{
+    background-image:url(images/albumart/albumartBLUR.jpg);
+    background-size:130%;
+    background-position:top;
+}
+
+
+#harvestrpg{
+    background-image:url(images/harvestr/harvestrBLUR.png);
+    background-size:130%;
+    background-position:top;
+}
+
+#thingiversepg{
+    background-image:url(images/thingiverse/thingiverseBLUR.jpg);
+    background-size:130%;
+    background-position:top;
+}
+
+#scrintpg{
+    background-image:url(images/scrint/scrintBLUR.jpg);
+    background-size:130%;
+    background-position:top;
+}
+
+#logo{
+    width:100%;
+}
+
+#logohit{
+    position:absolute;
+    width:70px;
+    height:70px;
+    top:40px;
+    left:40px;
+}
+
+
+#header{
+    font-family: 'Space Mono', sans-serif;
+    font-weight:700;
+    font-size:1.5em;
+    padding:20px;
+    position:relative;
+    left:2%
+}
+
+/** NAV **/
+
+.navlink:hover{
+    background-color:#f93;
+    color:white;
+}
+.navlink{
+    cursor:pointer;
+    text-align: center;
+    list-style-type: none;
+}
+
+.bodylink{
+    font-weight:800;
+}
+.bodylink:hover{
+    background-color:#f93;
+    color:white;
+}
+
+/** **/
+
+#wrapper{
+    max-width:1200px;
+    margin: 0 auto !important;
+    float: none !important;
+    background-color:white;
+    height:100%;
+}
+
+#content{
+    max-height:100vh;
+    overflow:scroll;
+}
+
+.project{
+    height:500px;
+    width:100%;
+}
+
+.bodytype{
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.4em;
+    text-align: left !important;
+    
+}
+
+.bump{
+    margin-top:3%;
+}
+
+/** ABOUT **/
+
+#about{
+    height:100vh;
+    background-color:#f93;
+    position:absolute;
+    padding-top:30px;
+    max-width:994px;
+    z-index:2;
+}
+
+.introduction{
+    font-family: 'Space Mono', sans-serif;
+    font-style:italic;
+}
+
+.explanation{
+    font-size:2em;
+    font-family: 'Space Mono', sans-serif;
+    font-weight:700;
+}
+
+.x{
+    position:relative;
+    left:20px;
+    width:20px;
+    cursor:pointer;
+    
+}
+
+.aboutlink:hover{
+    color:#f93;
+    background-color:black;
+}
+
+
+/** CONTACT **/
+
+#contact{
+    height:100vh;
+    background-color:black;
+    position:absolute;
+    padding-top:30px;
+    max-width:994px;
+    z-index:2;
+    color:#f93;
+}
+
+.contactlinks:hover{
+    background-color:#f93;
+    color:black;
+    
+}
+/** **/
+
+
+.initialH{
+    display:none;
+}
+
+#footer{
+    position:fixed;
+    bottom:0px;
+    padding:2px;
+    width:100%;
+    opacity: .8;
+    font-size:.1em;
+}
+
+
+/** GENERAL PROJECT STUFF **/
+
+.hoverthing{
+    width:100%;
+    height:100%;
+}
+
+.sectiontitle{
+    color:white;
+    z-index:2 !important;
+    pointer-events:none;
+    text-align:center;
+    font-size:40px;
+    line-height:500px;
+    bottom:0px;
+    width:100%;
+    opacity:1;
+    background:rgba(255,153,51,.9);
+    font-family:'Space Mono', sans-serif;
+}
+
+.coverwrap{
+    width:100%;
+    height:100%;
+    z-index:1;
+    opacity:0;
+    -webkit-transition: opacity .3s ease,width .2s ease;
+    -moz-transition: opacity .3s ease,width .2s ease;
+    -o-transition: opacity .3s ease,width .2s ease;
+}
+
+.coverwrap:hover{
+    width:100%;
+    height:100%;
+    opacity:1;
+    -webkit-transition: opacity .2s ease, width .2s ease;
+    -moz-transition: opacity .2s ease,width .2s ease;
+    -o-transition: opacity .2s ease,width .2s ease;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.v{
+    position:relative;
+    left:20px;
+    width:20px;
+    cursor:pointer;
+    
+}
+
+.moreinfo{
+    background-color:white;
+    padding-top:30px;
+}
+
+.pic{
+    box-shadow: 1px 1px 10px #EAE8DB;
+    display:block;
+    vertical-align: middle;
+    line-height: 0;
+    font-size:0;
+}
+/** HARVESTR **/
+
+#harvestr{
+    background-image:url(images/harvestr/harvestr.jpg);
+    background-size:cover;
+    background-position:center;
+}
+
+#harvestrnav{
+    position:fixed;
+    top:40px;
+    right:50px;
+    background-color:#f93;
+    width:200px;
+    height:325px;
+    padding:10px;
+}
+/** MAKESHIFT **/
+
+
+#makeshift{
+    background-image:url(images/makeshift/apr22.png);
+    background-size:cover;
+    background-position:center;
+}
+
+
+
+/** ALBUM ART **/
+
+#albumart{
+    background-image:url(images/albumart/3301.jpg);
+    background-size:cover;
+}
+
+
+
+/** PUB CTR **/
+
+#pubctr{
+    background-image:url(images/pubctr/ridinlowbanner.png);
+    background-size:300%;
+    background-position: 30%;
+
+}
+/** THINGIVERSE **/
+
+#thingiverse{
+    background-image:url(images/thingiverse/3401.jpg);
+    background-size:cover;
+}
+
+/** UNBOX **/
+
+#unbox{
+    background-image:url(images/unbox/unbox28.jpg);
+    background-size:130%;
+    background-position:top;
+}
+#mobilehome{
+    display:none;
+}
+
+/** SCRINT **/
+
+
+#scrint{
+    background-image:url(images/scrint/shark1.jpg);
+    background-size:130%;
+    background-position:top;
+}
+
+#sleeplink{
+    color:#f93;
+}
+
+#sleeplink:hover{
+    color:#000;
+}
+/**TABLET ********************************************************************
+*********************************************************************** **/
+
+@media only screen and (max-width:800px){
+    #plogo{
+        width:160%;
+        position:relative;
+        right:30%;
+}
+    #nav{
+        font-size:.85em;
+    }
+    
+    
+    
+}
+
+
+
+/**MOBILE ********************************************************************
+*********************************************************************** **/
+
+@media only screen and (max-width:550px){
+    #header{
+        width:100%;
+    }
+    
+    #logohit{
+        display:none;
+    }
+    
+    #nav{
+        font-size:1.4em;
+    }
+    
+    #navlink{
+        width:30%;
+    }
+    
+    #plogo{
+        padding-left:35%;
+        width:30%;
+        position:static;
+        pointer-events:none;
+    }   
+    
+    #mobilehome{
+        display:block;
+        position:fixed;
+        width:70%;
+        height:80px;
+        top:30px;
+    }
+    
+    #mobilehome:hover{
+        cursor:pointer;
+    }
+
+    
+    #about{
+    height:100%;
+    background-color:#f93;
+    position:absolute;
+    top:0px;
+    left:0px !important;
+    padding-top:30px;
+    width:100vw;
+    z-index:2;
+}
+    #contact{
+    height:100%;
+    position:absolute;
+    top:0px;
+    left:0px !important;
+    padding-top:30px;
+    width:100vw;
+    z-index:2;
+}
+  
+    
+    #content{
+    height:100%;
+    overflow:visible;
+}
+    .project{
+    height:200px;
+    width:100%;
+}
+    
+.v{
+    position:fixed;
+    left:20px;
+    top:20px;
+    width:50px;
+    cursor:pointer;
+    background-color:white;
+    padding:10px;
+    opacity:.5;
+    
+}
+    
+.x{
+    position:fixed;
+    left:80%;
+    top:20px;
+    width:50px;
+    cursor:pointer;
+    padding:10px;
+    
+}
+    
+.sectiontitle{
+    color:white;
+    z-index:2 !important;
+    pointer-events:none;
+    text-align:center;
+    font-size:17px;
+    line-height:200px;
+    bottom:0px;
+    width:100%;
+    opacity:1;
+    background:rgba(255,153,51,.9);
+    font-weight:700;
+}
+
+    .pic{
+        margin-top:3%    }
+}

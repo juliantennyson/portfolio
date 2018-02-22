@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>j.tennyson</title>
+  <meta name="description" content="">
+  <meta name="author" content="julian tennyson">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Space+Mono:400i,700" rel="stylesheet">
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/ico" href="css/images/colorblock.ico">
+
+  <!-- SCRIPTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script>
+
+        $(document).ready(function(){
+            
+           $("#aboutlink").click(function(){
+            $("#about").slideToggle(400);
+            $("#contact").slideUp(400);
+           });
+            
+            $("#xabout").click(function(){
+            $("#about").slideUp(400);
+           });
+            
+            $("#contactlink").click(function(){
+            $("#contact").slideToggle(400);
+            $("#about").slideUp(400);
+           });
+            
+            $("#xcon").click(function(){
+            $("#contact").slideUp(400);
+           });
+            
+            $("body").hover(function(){
+                $("#plogo").attr("src","css/images/logo/plogo-11.svg");
+            });
+            
+            $("#plogo").mouseenter(function(){
+                $("#plogo").attr("src","css/images/logo/plogo-13.svg");
+            });
+            
+            $("#plogo").mouseleave(function(){
+                $("#plogo").attr("src","css/images/logo/plogo-11.svg");
+
+            });
+            
+            $("#logohit").mouseenter(function(){
+                $("#plogo").attr("src","css/images/logo/plogo-12.svg");
+            });
+            
+            $("#logohit").mouseleave(function(){
+                $("#plogo").attr("src","css/images/logo/plogo-11.svg");
+            });
+            
+               //PARALLAX FUNCTION
+           $('#content').scroll(function(){
+                var x = 100 * this.scrollTop / (this.scrollHeight-this.clientHeight);
+                var y = ((-x)*4);
+               $('.parallax').css('background-position-y', y)
+            });  
+
+        
+            
+        });
+    
+    
+    </script>
+    
+</head>
+
+<!-- -------------------------
+------------------------------
+----------SIDEBAR ------------
+------------------------------
+------------------------------>
+    <body id="harvestrpg" class="projectpage parallax">
+        <div id="loader"></div>
+        
+  
+<div id="wrapper" class="twelve columns container">
+    
+   
+    
+
+    <div id="header" class="two columns">
+        
+            <div id="logo" class="twelve columns"><img src="css/images/logo/plogo-11.svg" id="plogo">
+            <a href="index.html"><div id="logohit" title="well hello!"></div></a>
+                
+                <a href="index.html"><div id="mobilehome" title="well hello!"></div></a>
+            </div>
+            
+            <div id="nav" class="twelve columns">
+            <ul>
+                <li id="aboutlink" class="navlink">about</li>
+                <li id="insta" class="navlink"><a href="https://vimeo.com/jdgz/" target="_blank" title="links out!">vimeo</a></li>
+                <li id="insta" class="navlink"><a href="https://www.instagram.com/jdzgn/" target="_blank" title="links out!">insta</a></li>
+                <li class="navlink"><a href="/css/images/pdf/JTennyson_Resume.pdf">resume</a></li>
+                <li id="contactlink" class="navlink">contact</li>
+                
+                
+                
+            </ul>
+            
+            </div>
+            </div>
+    
+         <div id="content" class="ten columns">
+             
+             
+             
+             <div id="about" class="ten columns initialH">
+                 
+                 <img src="css/images/x.svg"  id="xabout" class="x one column">
+                 
+                 <div class="ten columns offset-by-one">
+                     
+                     <div class="row">
+                     <h1 class="introduction twelve columns">hi! i'm julian tennyson.</h1>
+                    </div>
+                     
+                     <p class="explanation twelve columns">
+                         
+                     i'm a design student at western washington university with a minor in psychology. i believe in sustainable design and design for social change. let's work together!
+                     <br><br><br>
+                     in my spare time, i play guitar and drums in bands. feel free to check out any of my bands!
+                     <br><br>
+                        <a class="aboutlink" href="https://stratofortress.bandcamp.com/">Stratofortress</a><br>
+                        <a class="aboutlink" href="https://virgovirgo.bandcamp.com/">Virgo Virgo</a><br>
+                        <a class="aboutlink" href="https://tomnook.bandcamp.com/">Tom Nook</a><br>
+                        <a class="aboutlink" href="https://goodsleep.bandcamp.com/">Good Sleep</a>
+
+                    </p>
+                 
+                 </div>
+                 
+             </div>
+             
+             <div id="row">
+             
+             <div id="contact" class="ten columns initialH">
+                 
+                 <img src="css/images/xcon.svg" id="xcon" class="x one column">
+                 
+                 <div class="ten columns offset-by-one">
+                     
+                     <div class="row">
+                     <h1 class="introduction twelve columns">email is best.</h1>
+                    </div>
+                     
+                     <p class="explanation twelve columns">
+                         
+                     <a href="mailto:juliantennyson@gmail.com" class="contactlinks">juliantennyson@gmail.com</a>
+                         <br>
+                     <a href="tel:+12063873763" class="contactlinks">(206)387-3763</a></p>
+                 
+                 </div>
+                 
+             </div>
+                 
+            </div>
+             
+             
+<!-- -------------------------
+------------------------------
+----------PROJECTS -----------
+------------------------------
+----------vvvvvvvv------------>
+            
+    <div id="row">
+             
+             <div class="moreinfo twelve columns">
+                 
+                 <a href="index.html"><img src="css/images/v.svg" class="v one column"></a>
+                 
+                 <div class="ten columns offset-by-one">
+                     
+                     <div class="row">
+                     
+                    </div>
+                     
+                     <h1 class="introduction twelve columns">
+                         
+                     harvestr is an app for growing food.  
+                        
+                     </h1>
+                     
+                     <h6 class="explanation twelve columns">
+                         
+                     it was created for design 361, user experience design.
+                         
+                      <hr>
+                     </h6>
+                     
+                     <div class="twelve columns">
+                     <video class="twelve columns" controls autoplay>
+                        <source src="css/images/harvestr/harvestr.mp4" type="video/mp4">
+                            There would be a video here if you had the right web browser ;&gt;.
+                        </video>
+                     </div>
+                     
+                     <h1 class="twelve columns"><br></h1>
+                     
+                    
+                     <p id="brief" class="explanation twelve columns">
+                    the brief:
+                      
+                     </p>
+                     
+                     
+                     <p class="bodytype">
+                    Research, design, develop, and test a mobile application prototype. 
+                     
+                     <br><br>
+                     An app to teach people how to grow their own food whether it be in a large yard or in an apartment. The app allows users to input their information about experience level, type of space, and desired crop.</p> 
+                     
+                     <p class="explanation twelve columns">
+                    the team:
+                      
+                     </p>
+                     
+                     
+                     <p class="bodytype">
+                    
+                     
+                     
+                     I collaborated with <a class="bodylink" href="hannah-shaffer.com">Han Shaffer</a> to complete this project. The only things we split work on was the visual design - they made the style guide and I did layout of the app and motion elements. We worked cooperatively on research, conceptual development, user testing, journey maps, and this case study. </p> 
+                     
+                                          <h1 class="twelve columns"><hr></h1>
+                    <p class="explanation twelve columns">
+                    we discussed initial concepts and plans in class and came up with a very rough map of what our "loop" of functionality within the app would be.
+                      
+                     </p>
+                     
+                     <div class="row">
+                     <div class="pic ten columns"><img width="100%" src="css/images/harvestr/initial.jpg"></div>
+                     
+                     </div>
+                     <h6 class="twelve columns"><br></h6>
+
+                     <p class="bodytype">
+            
+                     We decided we wanted the app to function in two ways. the first and more common path would involve the user entering information about their garden, and having plants suggested to them by category. The other path would be the inverse: the user searches for a plant and the app tells the user what conditions they will need to grow the plant. Our audience would be people who are app-savvy and anywhere from full beginners to experts at gardening.</p> 
+                     <p class="explanation twelve columns">
+                    with this idea in mind, we began by doing some competitor research.
+                      
+                     </p>
+                     
+                     
+                     
+                     
+                     <p class="bodytype">
+            
+                     <a class="bodylink" href="http://growitmobile.com/">GrowIt</a> is a social media based app for gardeners, allowing people to share what they are growing and possibly exchange plants with other users.</p> 
+                     
+                     <div class="row">
+                     <div class="pic ten columns"><img width="100%" src="css/images/harvestr/growit.png"></div>
+                     
+                     </div>
+                     
+                    <h1 class="twelve columns"><br></h1>
+
+                     <p class="bodytype">
+            
+                     <a class="bodylink" href="https://www.kickstarter.com/projects/1802946897/agrisaurus-an-app-for-growing-food">Agrisaurus</a> is a web based app primarily for laying out a garden based on the amount of space each plant will take up. It has a very extensive database of information, which is something we wanted to have in our app.</p> 
+                     <div class="row">
+                     <div class="pic ten columns"><img width="100%" src="css/images/harvestr/agrisaurus.jpg"></div>
+                     
+                     </div>
+                     
+                     <h1 class="twelve columns"><br></h1>
+
+                     <p class="bodytype">
+            
+                     <a class="bodylink" href="http://beta.mygreenspace.co/app">My Greenspace</a> is the closest to the intention we were following for our app. The app has tutorials and lets users input information about their location, climate, and budget to maximize their ability to grow food. The app also integrates e-commerce, which we wanted to stay away from.</p> 
+                     <div class="row">
+                     <div class="pic ten columns"><img width="100%" src="css/images/harvestr/greenspace.png"></div>
+                     
+                     </div>
+                     <hr class="twelve columns">
+                     <p class="explanation twelve columns">
+                    
+                         there were elements of each competitor that we wanted to emulate, and elements that could be improved upon. 
+                         <br>
+                        <br>
+                         the next step was conducting interviews with users to determine what kind of functionality our audience would want.
+                     </p>
+                     
+                     <p class="bodytype">
+            
+                     We interviewed Rose Delorie and Marlo Mudd and took notes.</p>
+                     
+                     <div class="row">
+                     <div class=" six columns"><img width="100%" src="css/images/harvestr/rose.jpg"></div>
+                     <div class=" six columns"><img width="100%" src="css/images/harvestr/rose2.jpg"></div>
+                     </div>
+                     <p class="bodytype">
+                <br>
+                     Our insights included:
+                     </p>
+                     <ul class="bodytype">
+                     <li>Reminders are easily tuned out unless they’re prompting the user to do something out of the ordinary</li>
+                         <li>Having a community within the app was intriguing</li>
+                         <li>People don’t necessarily grow their own food to be economical. Gardening is an investment.</li>
+                         <li>Jargon makes it difficult to learn how to garden</li>
+<li>Forgetting about a plant is the easiest way to kill it.
+</li>
+                         <li>Reminders should be experiential so as not to get dull/annoying
+</li>
+                     </ul>
+                     
+                     <hr class="twelve columns">
+                     
+                     <p class="explanation twelve columns">
+                    
+                         with this in mind, we moved into creating personas and user scenarios to imagine how our app might be used.  
+                         <br>
+                          </p>
+                         <div class="row">
+                     <div class="pic twelve columns"><img width="100%" src="css/images/harvestr/process2.png"></div>
+                     </div>
+                        <div class="row bump">
+                     <div class="pic twelve columns"><img width="100%" src="css/images/harvestr/process3.png"></div>
+                     </div>
+                     
+                     <p class="explanation twelve columns">
+                        <br>
+                         yes, that's a photo of judd apatow.
+                         <br>
+                          </p>
+                     
+                     <div class="pic twelve columns"><img width="100%" src="css/images/harvestr/process4.png"></div>
+                    
+                         <hr class="twelve columns">
+
+                     
+                     <p class="explanation twelve columns">
+                    
+                         this gave us a rough concept for key features of our app, so we began sketching two journey maps.  
+                          </p>
+                                    <hr class="twelve columns">
+                    <p class="explanation twelve columns">
+                    
+                         the first was simply the process someone would go through for planting food, without assistance from an app.  
+                          </p>
+                     <div class="row">
+                      <div class="pic twelve columns"><img width="100%" src="css/images/harvestr/journeymap.jpg"></div>
+                         
+                         </div>
+                     <div class="row bump">
+                     <div class="pic twelve columns"><img width="100%" src="css/images/harvestr/journeymap3.png"></div>
+                         
+                         </div>
+                     <div class="row"></div>
+                     <p class="bodytype">
+                        <br><br>
+                     from this, we identified areas that our app could improve the process and pathways that could be avoided with the help of our app.</p>
+                     
+                     <div class="pic twelve columns"><img width="100%" src="css/images/harvestr/journeymap4.png"></div>
+                     
+                     
+                     <div class="row"></div>
+                      <p class="explanation">
+                        <br><br>
+                     then we developed a journey map of how our app would be used.</p>
+                     <div class="pic twelve columns"><img width="100%" src="css/images/harvestr/journeymap5.png"></div>
+                      <hr class="twelve columns">
+                     
+                     
+                     <p class="explanation">
+                        <br><br>
+                     we then developed use scenario worksheets to base our prototype off of for user testing purposes:</p>
+                     <div class="row">
+                      <div class="pic six columns"><img width="100%" src="css/images/harvestr/use1.png"></div>
+                     <div class="pic six columns"><img width="100%" src="css/images/harvestr/use2.png"></div>
+                     </div>
+                                           <hr class="twelve columns">
+
+                     <p class="explanation">
+                        <br><br>
+                     now, we could start on our paper prototype. so we began drawing...</p>
+                     <div class="twelve columns"><img width="100%" src="css/images/harvestr/prototype001.jpg"></div>
+                     <p class="explanation">
+                        <br><br>
+                     and drawing...</p>
+                     <div class="row">
+                      <div class="six columns"><img width="100%" src="css/images/harvestr/prototype002.jpg"></div>
+                     <div class="six columns"><img width="100%" src="css/images/harvestr/prototype003.jpg"></div>
+                     </div>
+                     <p class="explanation">
+                        <br><br>
+                     and drawing...</p>
+                     <div class="row">
+                      <div class="four columns"><img width="100%" src="css/images/harvestr/prototype004.jpg"></div>
+                     <div class="four columns"><img width="100%" src="css/images/harvestr/prototype005.jpg"></div>
+                         <div class="four columns"><img width="100%" src="css/images/harvestr/prototype006.jpg"></div>
+                     </div>
+                     
+                     <p class="explanation">
+                        <br>
+                     by the time we finished the two user scenarios we had come up with, we already had over forty screens. it was at this point that we decided to remove the community aspect of the app for simplicity's sake. <span style="color:#EAE8DB">(and for our own sanity)</span> </p>
+                     
+                     <p class="bodytype">
+                
+                     This modified our journey map slightly and simplified our process. Overall, it was the right decision. </p>
+                     
+                     <div class="pic twelve columns"><img width="100%" src="css/images/harvestr/journeymap6.png"></div>
+                      <hr class="twelve columns">
+                     
+                     
+                     <p class="explanation">
+                        <br>
+                     we then did user testing on 5 subjects with our paper prototype of the app.</p>
+                     
+                      
+                          <div class="twelve columns"><img width="100%" src="css/images/harvestr/usertest4.jpg"></div>
+                     <div class="row">
+                      <div class="six columns"><img width="100%" src="css/images/harvestr/usertest.jpg"></div>
+                  
+                         <div class="six columns"><img width="100%" src="css/images/harvestr/usertest3.jpg"></div>
+                     </div>
+                     
+                     <p class="bodytype">
+                    <br>
+                     We got great feedback from our users and by the fifth test, most of the issues people were running into were inherent problems with paper prototypes: no response to selecting options, no motion, etc. The next step was visual design and a high-resolution prototype.</p>
+                     <hr class="twelve columns">
+                    <div class="pic twelve columns"><img width="100%" src="css/images/harvestr/visual1.png"></div>
+                    <div class="row"></div>
+                     <p class="explanation">
+                        <br>
+                     we had previously come up with rough concepts for our visuals, but refined them at this point in the process. 
+                         
+                     </p><p class="bodytype"> we wanted something functional yet inviting, so the hand drawn aesthetic with paint textures matched with the industrial type stood out the most to us.</p>
+                    
+                    <div class="row">
+                      <div class="pic six columns"><img width="100%" src="css/images/harvestr/visual2.png"></div>
+                  
+                         <div class="pic six columns"><img width="100%" src="css/images/harvestr/visual3.png"></div>
+                     </div> 
+                     
+                      <div class="row bump">
+                      <div class="pic four columns"><img width="100%" src="css/images/harvestr/visual4.png"></div>
+                  
+                         <div class="pic four columns"><img width="100%" src="css/images/harvestr/visual5.png"></div>
+                          
+                          <div class="pic four columns"><img width="100%" src="css/images/harvestr/visual6.png"></div>
+                     </div> 
+                     
+                     <p class="explanation">
+                        <br>
+                     using this style, we laid out the ~40 different pages necessary for the high resolution prototype.
+                         
+                     </p>
+                     <div class="pic twelve columns"><img width="100%" src="css/images/harvestr/visual7.png"></div>
+                     
+                     <hr class="twelve columns">
+                     
+                     <p class="bodytype"> 
+                         <br><br>
+                         Using <a class="bodylink" href="https://www.invisionapp.com/">Invision,</a> we implemented a functional high resolution prototype accessible online. You can access it <a class="bodylink" href="https://invis.io/AFBG3XF4V">here!</a></p>
+                     
+                                          <hr class="twelve columns">
+
+                     <p class="explanation">
+                        <br>
+                     in reflection:
+                         
+                     </p>
+                     
+                     <p class="bodytype"> 
+                         
+                         There are many things we could have done differently with this project. However, overall I think we made the correct decisions for simplification of functionality and usability. The app is something that, if built out, could be a very enjoyable and functional experience for the budding gardener. </p>
+                     
+                     
+                     
+                     <div class="twelve columns"><img width="100%" src="css/images/harvestr/harvestr.jpg"></div>
+                     
+                     <hr class="twelve columns">
+                     
+                     </div>
+                 
+                
+                     
+                     
+                     
+                 
+                 </div>
+                 
+             </div>
+                 
+            </div>
+           
+    
+             
+             
+<!-- ------^^^^^^^^-----------
+------------------------------
+----------PROJECTS------------
+------------------------------
+------------------------------>
+    </div>
+    
+            <div id=footer>&copy; julian tennyson 2017</div>
+        
+
+    
+    
+<!-- -------------------------
+------------------------------
+----------END ----------------
+------------------------------
+------------------------------>
+</body>
+</html>
+

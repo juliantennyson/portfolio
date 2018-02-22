@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>j.tennyson</title>
+  <meta name="description" content="">
+  <meta name="author" content="julian tennyson">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Space+Mono:400i,700" rel="stylesheet">
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/ico" href="css/images/colorblock.ico">
+
+  <!-- SCRIPTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script>
+
+        $(document).ready(function(){
+            
+           $("#aboutlink").click(function(){
+            $("#about").slideToggle(400);
+            $("#contact").slideUp(400);
+           });
+            
+            $("#xabout").click(function(){
+            $("#about").slideUp(400);
+           });
+            
+            $("#contactlink").click(function(){
+            $("#contact").slideToggle(400);
+            $("#about").slideUp(400);
+           });
+            
+            $("#xcon").click(function(){
+            $("#contact").slideUp(400);
+           });
+            
+            $("body").hover(function(){
+                $("#plogo").attr("src","css/images/logo/plogo-11.svg");
+            });
+            
+            $("#plogo").mouseenter(function(){
+                $("#plogo").attr("src","css/images/logo/plogo-13.svg");
+            });
+            
+            $("#plogo").mouseleave(function(){
+                $("#plogo").attr("src","css/images/logo/plogo-11.svg");
+
+            });
+            
+            $("#logohit").mouseenter(function(){
+                $("#plogo").attr("src","css/images/logo/plogo-12.svg");
+            });
+            
+            $("#logohit").mouseleave(function(){
+                $("#plogo").attr("src","css/images/logo/plogo-11.svg");
+            });
+
+        //PARALLAX FUNCTION
+           $('#content').scroll(function(){
+                var x = 100 * this.scrollTop / (this.scrollHeight-this.clientHeight);
+                var y = ((-x)/1.3);
+               $('.parallax').css('background-position-y', y)
+            });
+
+            
+    
+
+        
+            
+        });
+    
+    
+    </script>
+    
+</head>
+
+<!-- -------------------------
+------------------------------
+----------SIDEBAR ------------
+------------------------------
+------------------------------>
+    <body id="pubctrpg" class="projectpage parallax">
+        <div id="loader"></div>
+
+    
+<div id="wrapper" class="twelve columns container">
+    
+   
+    
+    
+    
+    <div id="header" class="two columns">
+            <div id="logo" class="twelve columns"><img src="css/images/logo/plogo-11.svg" id="plogo">
+            <a href="index.html"><div id="logohit" title="well hello!"></div></a>
+                
+                <a href="index.html"><div id="mobilehome" title="well hello!"></div></a>
+            </div>
+            
+            <div id="nav" class="twelve columns">
+            <ul>
+                <li id="aboutlink" class="navlink">about</li>
+                <li id="insta" class="navlink"><a href="https://vimeo.com/jdgz/" target="_blank" title="links out!">vimeo</a></li>
+                <li id="insta" class="navlink"><a href="https://www.instagram.com/jdzgn/" target="_blank" title="links out!">insta</a></li>
+                <li class="navlink"><a href="/css/images/pdf/JTennyson_Resume.pdf">resume</a></li>
+                <li id="contactlink" class="navlink">contact</li>
+                
+                
+                
+            </ul>
+            
+            </div>
+            </div>
+    
+         <div id="content" class="ten columns">
+             
+             <div id="scroll">
+             
+             <div id="about" class="ten columns initialH">
+                 
+                 <img src="css/images/x.svg"  id="xabout" class="x one column">
+                 
+                 <div class="ten columns offset-by-one">
+                     
+                     <div class="row">
+                     <h1 class="introduction twelve columns">hi! i'm julian tennyson.</h1>
+                    </div>
+                     
+                     <p class="explanation twelve columns">
+                         
+                     i'm a design student at western washington university with a minor in psychology. i believe in sustainable design and design for social change. let's work together!
+                     <br><br><br>
+                     in my spare time, i play guitar and drums in bands. feel free to check out any of my bands!
+                     <br><br>
+                        <a class="aboutlink" href="https://stratofortress.bandcamp.com/">Stratofortress</a><br>
+                        <a class="aboutlink" href="https://virgovirgo.bandcamp.com/">Virgo Virgo</a><br>
+                        <a class="aboutlink" href="https://tomnook.bandcamp.com/">Tom Nook</a><br>
+                        <a class="aboutlink" href="https://goodsleep.bandcamp.com/">Good Sleep</a>
+
+                    </p>
+                 
+                 </div>
+                 
+             </div>
+             
+             <div id="row">
+             
+             <div id="contact" class="ten columns initialH">
+                 
+                 <img src="css/images/xcon.svg" id="xcon" class="x one column">
+                 
+                 <div class="ten columns offset-by-one">
+                     
+                     <div class="row">
+                     <h1 class="introduction twelve columns">email is best.</h1>
+                    </div>
+                     
+                     <p class="explanation twelve columns">
+                         
+                     <a href="mailto:juliantennyson@gmail.com" class="contactlinks">juliantennyson@gmail.com</a>
+                         <br>
+                     <a href="tel:+12063873763" class="contactlinks">(206)387-3763</a></p>
+                 
+                 </div>
+                 
+             </div>
+                 
+            </div>
+             
+             
+<!-- -------------------------
+------------------------------
+----------PROJECTS -----------
+------------------------------
+----------vvvvvvvv------------>
+            
+    <div id="row">
+             
+             <div class="moreinfo twelve columns">
+                 
+                 <a href="index.html"><img src="css/images/v.svg" class="v one column"></a>
+                 
+                 <div class="ten columns offset-by-one">
+                     
+                     <div class="row">
+                     
+                    </div>
+    
+                     
+                     <p class="explanation twelve columns">
+                         
+                     western washington university's AS Publicity Center is the premiere graphic design service offered to clubs and offices at the university.  
+                     </p>
+                     
+                     <p class="bodytype">I was taken on as a Graphic Designer in March of 2017 and have created many campaigns including banners, posters, motion assets, &amp; handbills. In June 2017 I was promoted to Lead Graphic Designer and have been working closely with the university with various high-impact projects including environmental graphics and site map design.</p> 
+                     
+                     <hr class="twelve columns">
+                     
+                     <div class="row">
+                     <div class="pic six columns"><img width="100%" src="css/images/pubctr/ridinlowbanner.png"></div>
+                         <div class="pic six columns"><img width="100%" src="css/images/pubctr/immigrationbanner.png"></div>
+                     </div>
+                     <div class="row bump">
+                     <div class="pic six columns"><img width="100%" src="css/images/pubctr/ridinlowposter.png"></div>
+                        <div class="pic six columns"><img width="100%" src="css/images/pubctr/immigrationposter.png"></div>
+            
+                     </div>
+                     
+                     <div class="row bump">
+                         <div class="pic six columns"><img width="100%" src="css/images/pubctr/scentfree.png"></div>
+                     <div class="pic six columns"><img width="100%" src="css/images/pubctr/geenarocero.png"></div>
+                        
+            
+                     </div>
+                     
+                       <div class="row bump">
+                         <div class="pic twelve columns"><img width="100%" src="css/images/pubctr/pals.png"></div>
+                        
+            
+                     </div>
+                     
+                     <hr class="twelve columns">
+                     
+                      <p class="explanation twelve columns">
+                         
+                     Below are several projects I worked on for the AS Outdoor Center.
+                     </p>
+                    
+                     <hr class="twelve columns">
+                     
+                     <div class="row bump">
+                         <div class="pic four columns"><img width="100%" src="css/images/pubctr/leaderbanners1.png"></div>
+                         
+                          <div class="pic four columns"><img width="100%" src="css/images/pubctr/leaderbanners2.png"></div>
+                         
+                          <div class="pic four columns"><img width="100%" src="css/images/pubctr/leaderbanners3.png"></div>
+                        
+            
+                     </div>
+                     
+                     
+                     <p class="bodytype bump">The above banners are part of an environmental graphic addition to the Viking Union building. I did the photography, photo editing and design work, as well as working with the outdoor center to discuss size and implementation.</p> 
+                      <div class="row bump">
+                         <div class="pic twelve columns"><img width="100%" src="css/images/pubctr/excursionscatalog1.png"></div>
+                         
+                    
+                        
+            
+                     </div>
+                     
+                      <div class="row bump">
+                         <div class="pic twelve columns"><img width="100%" src="css/images/pubctr/excursionscatalog.png"></div>
+                         
+                    
+                        
+            
+                     </div>
+                        
+                        <hr class="twelve columns">
+                 </div>
+                 
+             </div>
+                 
+            </div>
+           
+    
+             
+             
+<!-- ------^^^^^^^^-----------
+------------------------------
+----------PROJECTS------------
+------------------------------
+------------------------------>
+    </div>
+     </div>
+            <div id=footer>&copy; julian tennyson 2017</div>
+
+            
+</div>
+        
+
+    
+<!-- -------------------------
+------------------------------
+----------END ----------------
+------------------------------
+------------------------------>
+</body>
+</html>
