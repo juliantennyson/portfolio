@@ -1,0 +1,72 @@
+ <div id="logo" class="twelve columns"><img src="css/images/logo/plogo-11.svg" id="plogo">
+            <a href="index.html"><div id="logohit" title="well hello!"></div></a>
+                
+                <a href="index.html"><div id="mobilehome" title="well hello!"></div></a>
+            </div>
+            
+            <div id="nav" class="twelve columns">
+            <ul>
+                <li id="aboutlink" class="navlink">about</li>
+                <li id="insta" class="navlink"><a href="https://vimeo.com/jdgz/" target="_blank" title="links out!">vimeo</a></li>
+                <li id="insta" class="navlink"><a href="https://www.instagram.com/jdzgn/" target="_blank" title="links out!">insta</a></li>
+                <li class="navlink"><a href="/css/images/pdf/JTennyson_Resume.pdf">resume</a></li>
+                <li id="contactlink" class="navlink">contact</li>
+                
+                
+                
+            </ul>
+            
+            </div>
+
+ <script>
+
+        $(document).ready(function(){
+            
+           $("#aboutlink").click(function(){
+            $("#about").slideToggle(400);
+            $("#contact").slideUp(400);
+           });
+            
+            $("#xabout").click(function(){
+            $("#about").slideUp(400);
+           });
+            
+            $("#contactlink").click(function(){
+            $("#contact").slideToggle(400);
+            $("#about").slideUp(400);
+           });
+            
+            $("#xcon").click(function(){
+            $("#contact").slideUp(400);
+           });
+            
+            $("body").hover(function(){
+                $("#plogo").attr("src","css/images/logo/plogo-11.svg");
+            });
+            
+            $("#plogo").mouseenter(function(){
+                $("#plogo").attr("src","css/images/logo/plogo-13.svg");
+            });
+            
+            $("#plogo").mouseleave(function(){
+                $("#plogo").attr("src","css/images/logo/plogo-11.svg");
+
+            });
+            
+            $("#logohit").mouseenter(function(){
+                $("#plogo").attr("src","css/images/logo/plogo-12.svg");
+            });
+            
+            $("#logohit").mouseleave(function(){
+                $("#plogo").attr("src","css/images/logo/plogo-11.svg");
+            });
+            
+            
+    
+
+        
+            
+        });
+    
+    
+    </script>

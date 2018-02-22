@@ -33,49 +33,9 @@
     
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    
-    <script>
+     <script>
 
         $(document).ready(function(){
-            
-           $("#aboutlink").click(function(){
-            $("#about").slideToggle(400);
-            $("#contact").slideUp(400);
-           });
-            
-            $("#xabout").click(function(){
-            $("#about").slideUp(400);
-           });
-            
-            $("#contactlink").click(function(){
-            $("#contact").slideToggle(400);
-            $("#about").slideUp(400);
-           });
-            
-            $("#xcon").click(function(){
-            $("#contact").slideUp(400);
-           });
-            
-            $("body").hover(function(){
-                $("#plogo").attr("src","css/images/logo/plogo-11.svg");
-            });
-            
-            $("#plogo").mouseenter(function(){
-                $("#plogo").attr("src","css/images/logo/plogo-13.svg");
-            });
-            
-            $("#plogo").mouseleave(function(){
-                $("#plogo").attr("src","css/images/logo/plogo-11.svg");
-
-            });
-            
-            $("#logohit").mouseenter(function(){
-                $("#plogo").attr("src","css/images/logo/plogo-12.svg");
-            });
-            
-            $("#logohit").mouseleave(function(){
-                $("#plogo").attr("src","css/images/logo/plogo-11.svg");
-            });
             
              //PARALLAX FUNCTION
            $('#content').scroll(function(){
@@ -83,15 +43,12 @@
                 var y = ((-x)/2);
                $('.parallax').css('background-position-y', y)
             });
-
-    
-
-        
             
         });
     
     
     </script>
+   
     
 </head>
 
@@ -109,83 +66,28 @@
    
     
 
-    <div id="header" class="two columns">
+   <div id="header" class="two columns">
         
-            <div id="logo" class="twelve columns"><img src="css/images/logo/plogo-11.svg" id="plogo">
-            <a href="index.html"><div id="logohit" title="well hello!"></div></a>
-                
-                <a href="index.html"><div id="mobilehome" title="well hello!"></div></a>
-            </div>
-            
-            <div id="nav" class="twelve columns">
-            <ul>
-                <li id="aboutlink" class="navlink">about</li>
-                <li id="insta" class="navlink"><a href="https://vimeo.com/jdgz/" target="_blank" title="links out!">vimeo</a></li>
-                <li id="insta" class="navlink"><a href="https://www.instagram.com/jdzgn/" target="_blank" title="links out!">insta</a></li>
-                <li class="navlink"><a href="/css/images/pdf/JTennyson_Resume.pdf">resume</a></li>
-                <li id="contactlink" class="navlink">contact</li>
-                
-                
-                
-            </ul>
-            
-            </div>
-            </div>
+        <div id="sidebar"></div>
+        
+        <script>
+            $(function(){
+                $("#sidebar").load("sidebar.html");
+                    });
+        </script>
+        
+    </div>
     
          <div id="content" class="ten columns">
              
              
              
-             <div id="about" class="ten columns initialH">
-                 
-                 <img src="css/images/x.svg"  id="xabout" class="x one column">
-                 
-                 <div class="ten columns offset-by-one">
-                     
-                     <div class="row">
-                     <h1 class="introduction twelve columns">hi! i'm julian tennyson.</h1>
-                    </div>
-                     
-                     <p class="explanation twelve columns">
-                         
-                     i'm a design student at western washington university with a minor in psychology. i believe in sustainable design and design for social change. let's work together!
-                     <br><br><br>
-                     in my spare time, i play guitar and drums in bands. feel free to check out any of my bands!
-                     <br><br>
-                        <a class="aboutlink" href="https://stratofortress.bandcamp.com/">Stratofortress</a><br>
-                        <a class="aboutlink" href="https://virgovirgo.bandcamp.com/">Virgo Virgo</a><br>
-                        <a class="aboutlink" href="https://tomnook.bandcamp.com/">Tom Nook</a><br>
-                        <a class="aboutlink" href="https://goodsleep.bandcamp.com/">Good Sleep</a>
-
-                    </p>
-                 
-                 </div>
-                 
-             </div>
-             
-             <div id="row">
-             
-             <div id="contact" class="ten columns initialH">
-                 
-                 <img src="css/images/xcon.svg" id="xcon" class="x one column">
-                 
-                 <div class="ten columns offset-by-one">
-                     
-                     <div class="row">
-                     <h1 class="introduction twelve columns">email is best.</h1>
-                    </div>
-                     
-                     <p class="explanation twelve columns">
-                         
-                     <a href="mailto:juliantennyson@gmail.com" class="contactlinks">juliantennyson@gmail.com</a>
-                         <br>
-                     <a href="tel:+12063873763" class="contactlinks">(206)387-3763</a></p>
-                 
-                 </div>
-                 
-             </div>
-                 
-            </div>
+             <div id="aboutload"></div>
+        <script>
+        $(function(){
+                      $("#aboutload").load("aboutload.html");
+                    });
+            </script>
              
              
 <!-- -------------------------
