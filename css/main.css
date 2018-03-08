@@ -142,8 +142,10 @@ body{
 }
 
 .project{
+    position:relative;
     height:500px;
     width:100%;
+    background-size:996px;
 }
 
 .bodytype{
@@ -155,6 +157,41 @@ body{
 
 .bump{
     margin-top:3%;
+}
+
+/** HOVERING SHENANIGANS **/
+
+.coverwrap{
+    opacity:0;
+    background-color:#f93;
+    transition:opacity .3s ease;
+    width:100%;
+    height:100%;
+}
+
+.sectiontitle{
+    opacity:0;
+    position:absolute;
+    top:45%;
+    text-align:center;
+    width:100%;
+    font-size:4em;
+    color:white;
+    font-family: 'Space Mono', sans-serif;
+    transition:opacity .3s ease,top .3s ease;
+
+}
+
+.add{
+    opacity:.9 !important;
+}
+
+.move{
+    top:43% !important;
+}
+
+.bigger{
+    background-size:1030px !important;
 }
 
 /** ABOUT **/
@@ -235,43 +272,8 @@ body{
 
 /** GENERAL PROJECT STUFF **/
 
-.hoverthing{
-    width:100%;
-    height:100%;
-}
 
-.sectiontitle{
-    color:white;
-    z-index:2 !important;
-    pointer-events:none;
-    text-align:center;
-    font-size:40px;
-    line-height:500px;
-    bottom:0px;
-    width:100%;
-    opacity:1;
-    font-family:'Space Mono', sans-serif;
-}
 
-.coverwrap{
-    width:100%;
-    height:100%;
-    z-index:1;
-    opacity:0;
-    background:rgba(255,153,51,.9);
-    -webkit-transition: opacity .3s ease,width .2s ease;
-    -moz-transition: opacity .3s ease,width .2s ease;
-    -o-transition: opacity .3s ease,width .2s ease;
-}
-
-.coverwrap:hover{
-    width:100%;
-    height:100%;
-    opacity:1;
-    -webkit-transition: opacity .2s ease, width .2s ease;
-    -moz-transition: opacity .2s ease,width .2s ease;
-    -o-transition: opacity .2s ease,width .2s ease;
-}
 
 ::-webkit-scrollbar { 
     display: none; 
@@ -301,8 +303,8 @@ body{
 
 #harvestr{
     background-image:url(images/harvestr/harvestr.jpg);
-    background-size:cover;
     background-position:center;
+    transition: background .3s ease;
 }
 
 #harvestrnav{
@@ -318,9 +320,9 @@ body{
 
 
 #makeshift{
-    background-image:url(images/makeshift/apr22.png);
-    background-size:cover;
+    background-image:url(images/mshiftbanner.jpg);
     background-position:center;
+    transition: background .3s ease;
 }
 
 
@@ -329,7 +331,8 @@ body{
 
 #albumart{
     background-image:url(images/albumart/3301.jpg);
-    background-size:cover;
+    background-position:center;
+    transition: background .3s ease;
 }
 
 
@@ -337,24 +340,25 @@ body{
 /** PUB CTR **/
 
 #pubctr{
-    background-image:url(images/pubctr/ridinlowbanner.png);
-    background-size:300%;
-    background-position: 30%;
+    background-image:url(images/pubctrbanner.jpg);
+    background-position:center;
+    transition: background .3s ease;
 
 }
 /** THINGIVERSE **/
 
 #thingiverse{
-    background-image:url(images/thingiverse/3401.jpg);
-    background-size:cover;
+    background-image:url(images/thingiversebanner.jpg);
+    background-position:center;
+    transition: background .3s ease;
 }
 
 /** UNBOX **/
 
 #unbox{
     background-image:url(images/unbox/unbox28.jpg);
-    background-size:130%;
-    background-position:top;
+    background-position:center;
+    transition: background .3s ease;
 }
 #mobilehome{
     display:none;
@@ -364,9 +368,9 @@ body{
 
 
 #scrint{
-    background-image:url(images/scrint/shark1.jpg);
-    background-size:130%;
-    background-position:top;
+    background-image:url(images/scrintbanner.jpg);
+    background-position:center;
+    transition: background .3s ease;
 }
 
 #sleeplink{
@@ -383,13 +387,16 @@ body{
     #plogo{
         width:160%;
         position:relative;
+        z-index:10;
         right:30%;
 }
     #nav{
         font-size:.85em;
     }
     
-    
+    .sectiontitle{
+        font-size:3em;
+    }
     
 }
 
@@ -469,9 +476,20 @@ body{
     overflow:visible;
 }
     .project{
+    position:relative;
     height:200px;
     width:100%;
+    background-size:cover;
 }
+    .bigger{
+        background-size:cover !important;
+    }
+    
+    .sectiontitle{
+        opacity:1;
+        background-color:rgba(255,255,255,.8);
+        color:black;
+    }
     
 .v{
     position:fixed;
@@ -495,20 +513,6 @@ body{
     
 }
     
-.sectiontitle{
-    color:white;
-    z-index:2 !important;
-    pointer-events:none;
-    text-align:center;
-    font-size:17px;
-    line-height:200px;
-    bottom:0px;
-    width:100%;
-    opacity:1;
-    background:rgba(255,153,51,.9);
-    font-weight:700;
-}
-
     .pic{
         margin-top:3%    }
     
@@ -516,6 +520,10 @@ body{
         left:0;
     }
     body{
-        height:1563px;
+        height:1063px;
+    }
+    
+    .sectiontitle{
+        font-size:2em;
     }
 }

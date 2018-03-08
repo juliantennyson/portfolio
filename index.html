@@ -36,6 +36,21 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     
    <script>
+       $(document).ready(function(){
+           $(".project").hover(function(){
+               $(this).find(".coverwrap").toggleClass("add");
+               $(this).find(".sectiontitle").toggleClass("add");
+               $(this).find(".sectiontitle").toggleClass("move");
+               $(this).toggleClass("bigger");
+           });
+           
+           $(body).scroll(function(){
+               var s = body.scrollHeight;
+                $("#content").scroll(s);
+            });
+        
+       });
+       
     </script>
     
 </head>
@@ -90,13 +105,10 @@
              <a href="/makeshift.html">
              <div id="makeshift" class="project twelve columns">
                  
-                    <div class="coverwrap">
+                    <div class="coverwrap"></div>
+                 
                      <div class="sectiontitle">MAKE.SHIFT INTERNSHIP</div>
-                        </div>
-                 
-                     
 
-                 
              </div>
                  </a>
              
@@ -104,9 +116,9 @@
              <div id="scrint" class="project twelve columns">
                  
                     <div class="coverwrap">
-                     <div class="sectiontitle">SCREEN PRINTING PROJECTS</div>
+                     
                         </div>
-                 
+                 <div class="sectiontitle">SCREEN PRINTING PROJECTS</div>
                      
 
                  
@@ -116,27 +128,31 @@
              <a href="/thingiverse.html">
               <div id="thingiverse" class="project twelve columns">
                   <div class="coverwrap">
-                     <div class="sectiontitle">THINGIVERSE BRAND GUIDELINES</div>
+                     
                         </div>
+                  
+                  <div class="sectiontitle">THINGIVERSE BRAND GUIDELINES</div>
              </div>
              </a>
-             
+            <!-- 
              <a href="/albumart.html">
              <div id="albumart" class="project twelve columns">
                  
                  <div class="coverwrap">
-                     <div class="sectiontitle">ALBUM ART</div>
+                     
                         </div>
+                 <div class="sectiontitle">ALBUM ART</div>
              </div>
              </a>
-             
+             -->
               
            <a href="/pubctr.html">
               <div id="pubctr" class="project twelve columns">
                   
                   <div class="coverwrap">
-                     <div class="sectiontitle">PUBLICITY CENTER</div>
+                     
                         </div>
+                  <div class="sectiontitle">PUBLICITY CENTER</div>
              </div>
              </a>
               
@@ -147,8 +163,9 @@
              <div id="harvestr" class="project twelve columns">
                  
                     <div class="coverwrap">
-                     <div class="sectiontitle">HARVESTR CASE STUDY</div>
+                     
                         </div>
+                 <div class="sectiontitle">HARVESTR CASE STUDY</div>
                  
                      
 
@@ -161,8 +178,9 @@
              <div id="unbox" class="project twelve columns">
                  
                  <div class="coverwrap">
-                     <div class="sectiontitle">UNBOX EVENT BRANDING</div>
+                     
                         </div>
+<div class="sectiontitle">UNBOX EVENT BRANDING</div>
              </div>
     -->
     </div>
