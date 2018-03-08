@@ -44,10 +44,8 @@ body{
     height:100vh;
     background-color:#f6f6f6;
     position:fixed;
-    animation: fade 2s;
-    opacity: 0;
-    
 }
+
 #pubctrpg{
     background-image:url(images/pubctr/ridinlowbannerBLUR.png);
     background-size:130%;
