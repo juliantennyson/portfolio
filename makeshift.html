@@ -45,14 +45,13 @@
                $('.parallax').css('background-position-y', y)
             });
             
-            $(window).load(function(){
-                $("#loader").fadeOut(1000);
-                
-            });
+            
             
         });
     
-    
+    function loader(){
+                $("#loader").fadeOut(2000);
+            };
     </script>
     
 </head>
@@ -62,7 +61,7 @@
 ----------SIDEBAR ------------
 ------------------------------
 ------------------------------>
-    <body id="makeshiftpg" class="projectpage parallax">
+    <body onload="loader()" id="makeshiftpg" class="projectpage parallax">
         <div id="loader"></div>
         
     
