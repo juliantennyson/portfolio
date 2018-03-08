@@ -250,7 +250,6 @@ body{
     bottom:0px;
     width:100%;
     opacity:1;
-    background:rgba(255,153,51,.9);
     font-family:'Space Mono', sans-serif;
 }
 
@@ -259,6 +258,7 @@ body{
     height:100%;
     z-index:1;
     opacity:0;
+    background:rgba(255,153,51,.9);
     -webkit-transition: opacity .3s ease,width .2s ease;
     -moz-transition: opacity .3s ease,width .2s ease;
     -o-transition: opacity .3s ease,width .2s ease;
