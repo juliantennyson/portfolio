@@ -202,18 +202,18 @@ body{
 
 #contact{
     height:100vh;
-    background-color:black;
+    background-color:#f93;
     position:absolute;
     padding-top:30px;
     max-width:994px;
     z-index:2;
-    color:#f93;
+    color:black;
     overflow:scroll;
 }
 
 .contactlinks:hover{
-    background-color:#f93;
-    color:black;
+    background-color:black;
+    color:#f93;
     
 }
 /** **/
