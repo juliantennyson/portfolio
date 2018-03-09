@@ -532,4 +532,8 @@ body{
     .sectiontitle{
         font-size:2em;
     }
+    
+    h1, p{
+        padding:5%;
+    }
 }
