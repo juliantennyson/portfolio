@@ -86,13 +86,14 @@ body{
 
 #logo{
     width:100%;
+    position:relative;
 }
 
 #logohit{
     position:absolute;
     width:50%;
-    height:20%;
-    top:10%;
+    height:50%;
+    top:25%;
     left:25%;
 }
 
@@ -133,20 +134,9 @@ body{
     margin: 0 auto !important;
     float: none !important;
     background-color:white;
-    height:100%;
+    height:100vh;
 }
 
-#content{
-    max-height:100vh;
-    overflow:scroll;
-}
-
-.project{
-    position:relative;
-    height:500px;
-    width:100%;
-    background-size:996px;
-}
 
 .bodytype{
     font-family: 'Open Sans', sans-serif;
@@ -160,11 +150,22 @@ body{
 }
 
 /** HOVERING SHENANIGANS **/
+#content{
+}
+
+.project{
+    position:relative;
+    height:25vh;
+    width:100%;
+    background-size:1024px;
+    background-position:center;
+    transition: background .4s cubic-bezier(.66,.02,.55,.96), height .4s cubic-bezier(.66,.02,.55,.96);
+}
 
 .coverwrap{
     opacity:0;
     background-color:#f93;
-    transition:opacity .3s ease;
+    transition:opacity .4s cubic-bezier(.66,.02,.55,.96);
     width:100%;
     height:100%;
 }
@@ -178,12 +179,14 @@ body{
     font-size:4em;
     color:white;
     font-family: 'Space Mono', sans-serif;
-    transition:opacity .3s ease,top .3s ease;
-
+    transition:opacity .4s cubic-bezier(.66,.02,.55,.96),top .4s cubic-bezier(.66,.02,.55,.96);
 }
 
-.add{
+.take{
     opacity:.9 !important;
+}
+.add{
+    opacity:1 !important;
 }
 
 .move{
@@ -191,7 +194,15 @@ body{
 }
 
 .bigger{
-    background-size:1030px !important;
+    background-position:50% 100% !important;
+}
+
+.embiggen{
+    height:50vh;
+}
+
+.enshorten{
+    height:17.5vh;
 }
 
 /** ABOUT **/
@@ -303,8 +314,6 @@ body{
 
 #harvestr{
     background-image:url(images/harvestr/harvestr.jpg);
-    background-position:center;
-    transition: background .3s ease;
 }
 
 #harvestrnav{
@@ -321,8 +330,7 @@ body{
 
 #makeshift{
     background-image:url(images/mshiftbanner.jpg);
-    background-position:center;
-    transition: background .3s ease;
+
 }
 
 
@@ -331,8 +339,7 @@ body{
 
 #albumart{
     background-image:url(images/albumart/3301.jpg);
-    background-position:center;
-    transition: background .3s ease;
+
 }
 
 
@@ -341,24 +348,18 @@ body{
 
 #pubctr{
     background-image:url(images/pubctrbanner.jpg);
-    background-position:center;
-    transition: background .3s ease;
 
 }
 /** THINGIVERSE **/
 
 #thingiverse{
     background-image:url(images/thingiversebanner.jpg);
-    background-position:center;
-    transition: background .3s ease;
 }
 
 /** UNBOX **/
 
 #unbox{
     background-image:url(images/unbox/unbox28.jpg);
-    background-position:center;
-    transition: background .3s ease;
 }
 #mobilehome{
     display:none;
@@ -369,8 +370,6 @@ body{
 
 #scrint{
     background-image:url(images/scrintbanner.jpg);
-    background-position:center;
-    transition: background .3s ease;
 }
 
 #sleeplink{
@@ -390,6 +389,11 @@ body{
         z-index:10;
         right:30%;
 }
+    
+    #logohit{
+        width:100%;
+        left:0;
+    }
     #nav{
         font-size:.85em;
     }

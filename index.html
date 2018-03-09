@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/main.css">
-
+    
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="shortcut icon" type="image/ico" href="css/images/colorblock.ico">
@@ -34,15 +34,31 @@
     
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery.hoverIntent.js"></script>
+
+    
+
     
    <script>
        $(document).ready(function(){
+           
            $(".project").hover(function(){
-               $(this).find(".coverwrap").toggleClass("add");
+                $(".project").removeClass("embiggen");
+                $(this).toggleClass("embiggen");
+                $(".project:not(.embiggen)").toggleClass("enshorten");
+            });
+           
+            $(".project").hover(function(){
+               $(this).find(".coverwrap").toggleClass("take");
                $(this).find(".sectiontitle").toggleClass("add");
                $(this).find(".sectiontitle").toggleClass("move");
                $(this).toggleClass("bigger");
            });
+           
+            $("#projects").mouseleave(function(){
+                $(".project").removeClass("embiggen");
+                $(".project").removeClass("enshorten");
+            });
         
        });
        
@@ -96,7 +112,7 @@
 ------------------------------>
             
              
-             
+           <div id="projects"> 
              <a href="/makeshift.html">
              <div id="makeshift" class="project twelve columns">
                  
@@ -111,7 +127,6 @@
              <div id="scrint" class="project twelve columns">
                  
                     <div class="coverwrap">
-                     
                         </div>
                  <div class="sectiontitle">SCREEN PRINTING PROJECTS</div>
                      
@@ -152,7 +167,7 @@
              </a>
               
              
-             
+             <!--
              
              <a href="/harvestr.html">
              <div id="harvestr" class="project twelve columns">
@@ -162,13 +177,13 @@
                         </div>
                  <div class="sectiontitle">HARVESTR CASE STUDY</div>
                  
-                     
+                    
 
                  
              </div>
                  </a>
              
-             
+             --> 
              <!-- 
              <div id="unbox" class="project twelve columns">
                  
@@ -178,6 +193,8 @@
 <div class="sectiontitle">UNBOX EVENT BRANDING</div>
              </div>
     -->
+               
+               </div> 
     </div>
     
             <div id=footer>&copy; julian tennyson 2018</div>
