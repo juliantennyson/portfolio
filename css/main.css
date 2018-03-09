@@ -134,7 +134,7 @@ body{
     margin: 0 auto !important;
     float: none !important;
     background-color:white;
-    height:100vh;
+    height:100%;
 }
 
 
@@ -151,13 +151,15 @@ body{
 
 /** HOVERING SHENANIGANS **/
 #content{
+    overflow:scroll;
+    height:100vh;
 }
 
 .project{
     position:relative;
     height:25vh;
     width:100%;
-    background-size:1024px;
+    background-size:996px;
     background-position:center;
     transition: background .4s cubic-bezier(.66,.02,.55,.96), height .4s cubic-bezier(.66,.02,.55,.96);
 }
