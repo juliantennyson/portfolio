@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 685.6 685.6" style="enable-background:new 0 0 685.6 685.6;" xml:space="preserve">
+	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FF9933;}
-	.st1{fill:none;stroke:#231F20;stroke-width:11;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#231F20;stroke-width:4.8131;stroke-miterlimit:10;}
 </style>
 <title>plogo</title>
-<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -142.684 345.9285)" class="st0" cx="346.2" cy="345.2" rx="213.3" ry="213.3"/>
-<path class="st1" d="M374.5,324l-76.7,76.7c0,0-50.2,53.7-104,0"/>
-<line class="st1" x1="458.9" y1="239.6" x2="389.9" y2="308.6"/>
-<line class="st1" x1="458.9" y1="308.6" x2="389.9" y2="239.6"/>
-<line class="st1" x1="178" y1="318.7" x2="109" y2="387.7"/>
-<line class="st1" x1="178" y1="387.7" x2="109" y2="318.7"/>
+<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -62.4423 151.3575)" class="st0" cx="151.5" cy="151.1" rx="93.3" ry="93.3"/>
+<path class="st1" d="M163.9,141.8l-33.6,33.6c0,0-22,23.5-45.5,0"/>
+<line class="st1" x1="200.8" y1="104.8" x2="170.6" y2="135"/>
+<line class="st1" x1="200.8" y1="135" x2="170.6" y2="104.8"/>
+<line class="st1" x1="77.9" y1="139.4" x2="47.7" y2="169.6"/>
+<line class="st1" x1="77.9" y1="169.6" x2="47.7" y2="139.4"/>
 </svg>

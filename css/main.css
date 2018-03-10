@@ -45,7 +45,12 @@ body{
     background-color:#f6f6f6;
     position:fixed;
 }
-
+#loading{
+    position:absolute;
+    top:0px;
+    width:100%;
+    background-color:white;
+}
 #pubctrpg{
     background-image:url(images/pubctr/ridinlowbannerBLUR.png);
     background-size:130%;
@@ -87,8 +92,22 @@ body{
 #logo{
     width:100%;
     position:relative;
+    left:00px;
+    transition:left .3s ease-in;
 }
 
+#plogo{
+    width:100%;
+}
+.slidey{
+        animation:bounce .3s ease backwards;
+    }
+
+@keyframes bounce{
+    0%{left:0%}
+    80%{left:-5%}
+    100%{left:0%}
+}
 #logohit{
     position:absolute;
     width:50%;
@@ -207,13 +226,14 @@ body{
     height:17.5vh;
 }
 
+
 /** ABOUT **/
 
 #about{
     height:100vh;
     background-color:#f6f6f6;
     position:absolute;
-    padding-top:30px;
+    padding-top:45px;
     max-width:994px;
     z-index:2;
     overflow:scroll;
@@ -254,7 +274,7 @@ body{
     height:100vh;
     background-color:#f93;
     position:absolute;
-    padding-top:30px;
+    padding-top:45px;
     max-width:994px;
     z-index:2;
     color:black;
@@ -293,16 +313,23 @@ body{
 }
 
 .v{
-    position:relative;
-    left:20px;
-    width:20px;
+    position:fixed;
+    left:14%;
+    top:65px;
+    width:30px;
     cursor:pointer;
+    z-index:2;
+    margin-left:0;
+    transition: margin .3s ease;
+    padding-right:0%;
+    display:none;
     
 }
 
 .moreinfo{
     background-color:white;
-    padding-top:30px;
+    padding-top:50px;
+    position:relative;
 }
 
 .pic{
@@ -391,10 +418,13 @@ body{
         z-index:10;
         right:30%;
 }
-    
+    #logo{
+        
+    }
     #logohit{
         width:100%;
         left:0;
+        z-index:11;
     }
     #nav{
         font-size:.85em;
@@ -416,6 +446,9 @@ body{
         width:100%;
     }
     
+    #logo{
+        pointer-events:none;
+    }
     #logohit{
         display:none;
         pointer-events:none;
@@ -436,12 +469,15 @@ body{
         pointer-events:none;
     }   
     
+    
+    
     #mobilehome{
         display:block;
         position:absolute;
-        width:80%;
-        height:80px;
-        top:30px;
+        width:100%;
+        height:90px;
+        top:0px;
+        pointer-events: all;
     }
     
     #mobilehome:hover{
@@ -506,6 +542,7 @@ body{
     background-color:white;
     padding:10px;
     opacity:.5;
+    display:block;
     
 }
     
