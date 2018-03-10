@@ -573,4 +573,7 @@ body{
     h1, p{
         padding:5%;
     }
+    .projectpage{
+        background-image:none !important;
+    }
 }
