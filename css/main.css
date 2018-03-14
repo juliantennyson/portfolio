@@ -576,4 +576,9 @@ body{
     .projectpage{
         background-image:none !important;
     }
+    
+    .project{
+        margin-bottom:5%;
+        box-shadow: 2px 2px 5px #EAE8DB;
+    }
 }
