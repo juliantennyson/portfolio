@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Julian Tennyson | Motion Work</title>
+  <meta name="description" content="">
+  <meta name="author" content="julian tennyson">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Space+Mono:400i,700" rel="stylesheet">
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/ico" href="css/images/colorblock.ico">
+
+  <!-- SCRIPTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script>
+
+        $(document).ready(function(){
+            
+             //PARALLAX FUNCTION
+           $('#content').scroll(function(){
+                var x = 100 * this.scrollTop / (this.scrollHeight-this.clientHeight);
+                var y = ((-x)/2);
+               $('.parallax').css('background-position-y', y)
+            });
+            
+            
+            
+        });
+        
+        function loader(){
+                $("#loader").fadeOut(2000);
+            };
+    
+    </script>
+    
+</head>
+
+<!-- -------------------------
+------------------------------
+----------SIDEBAR ------------
+------------------------------
+------------------------------>
+    <body onload="loader()" id="motionpg" class="projectpage parallax">
+        <div id="loader"></div>
+        
+    
+<div id="wrapper" class="twelve columns container">
+    
+   
+    
+
+    <div id="header" class="two columns">
+        
+        <div id="sidebar"></div>
+        
+        <script>
+            $(function(){
+                $("#sidebar").load("sidebar.html");
+                    });
+        </script>
+        
+    </div>
+    
+         <div id="content" class="ten columns">
+             
+             
+             
+             <div id="aboutload"></div>
+        <script>
+        $(function(){
+                      $("#aboutload").load("aboutload.html");
+                    });
+            </script>
+             
+             
+<!-- -------------------------
+------------------------------
+----------PROJECTS -----------
+------------------------------
+----------vvvvvvvv------------>
+            
+    <div id="row">
+             
+             <div class="moreinfo twelve columns">
+                 
+                 <a href="index.html"><img src="css/images/v.svg" class="v one column"></a>
+                 
+                                <div class="twelve columns" style="padding-right:3%;padding-left:3%;">                     
+
+                     
+                     <div class="row">
+                     
+                    
+    
+                     
+                     <p class="explanation twelve columns">
+                         
+                     below is my animation and motion reel for 2016-2018
+                     </p>
+                     <video width="100%" autoplay muted controls loop>
+                     <source src="css/videos/reel.mp4" type="video/mp4">
+                     </video>
+                     <br><br>
+                     <p class="bodytype">Turn on the sound for some fun instrumental jams by me and my bands</p>
+                     
+                     </div>
+                     <div class="row">
+                     
+                                          <hr class="twelve columns">
+
+                     <p class="bodytype">I have had an interest in  motion design, film, and animation since middle school and have been developing my craft in the past couple of years. below are some select pieces that I am proud of.</p>
+                     
+                     
+                     
+                     
+                     </div>
+                     
+                     <div class="row">
+<div class="videoWrapper">
+<iframe src="https://player.vimeo.com/video/261209050" width="640px" height="480px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                         </div>
+                     </div>
+                     <div class="row bump">
+                     <div class="videoWrapper">
+<iframe src="https://player.vimeo.com/video/159031817" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+            
+                     </div>
+                     
+                     
+                     
+                    
+                     
+                     <hr class="twelve columns">
+                     
+                     
+                    
+                     
+                     
+    
+                 </div>
+                 
+             </div>
+                 
+            </div>
+           
+    
+             
+             
+<!-- ------^^^^^^^^-----------
+------------------------------
+----------PROJECTS------------
+------------------------------
+------------------------------>
+    </div>
+    
+            <div id=footer>&copy; julian tennyson 2018</div>
+
+</div>
+        
+
+    
+    
+<!-- -------------------------
+------------------------------
+----------END ----------------
+------------------------------
+------------------------------>
+</body>
+</html>
