@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="css/lightbox.css" rel="stylesheet">
+
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -33,7 +35,16 @@
     
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    
+
+<script src="js/lightbox.js"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'fadeDuration':200,
+      'wrapAround': true
+    })
+</script>
+
      <script>
 
         $(document).ready(function(){
@@ -44,7 +55,6 @@
                 var y = ((-x)/2);
                $('.parallax').css('background-position-y', y)
             });
-            
             
             
         });
@@ -121,16 +131,42 @@
                      <p class="bodytype">in january 2017, i was taken on as the graphic design intern. i design posters for their shows and a monthly concert calendar.</p> 
                      
                      <div class="row">
-                     <div class="pic four columns"><img width="100%" src="css/images/makeshift/mar17.png"></div>
-                     <div class="pic four columns"><img width="100%" src="css/images/makeshift/mar18.png"></div>
-                     <div class="pic four columns"><img width="100%" src="css/images/makeshift/apr22.png"></div>
+                     
+                    <div class="pic four columns">
+                        <a href="css/images/makeshift/mar17.png" data-lightbox="mar17" data-title="Virgo Virgo Poster">     
+                        <img width="100%" src="css/images/makeshift/mar17.png">
+                        </a>
+                    </div>
+                    
+                   <div class="pic four columns">
+                        <a href="css/images/makeshift/mar18.png" data-lightbox="mar18" data-title="Tom Nook Poster">     
+                        <img width="100%" src="css/images/makeshift/mar18.png">
+                        </a>
+                    </div>
+                     <div class="pic four columns">
+                        <a href="css/images/makeshift/apr22.png" data-lightbox="apr22" data-title="Retirement Poster">     
+                        <img width="100%" src="css/images/makeshift/apr22.png">
+                        </a>
+                    </div>
                      </div>
                      
                      <div class="row bump">
-                     <div class="pic four columns"><img width="100%" src="css/images/makeshift/apr14.png"></div>
-                     <div class="pic four columns"><img width="100%" src="css/images/makeshift/feb20.jpg"></div>
-                     <div class="pic four columns"><img width="100%" src="css/images/makeshift/mar30.jpg"></div>
-                     </div>
+                      <div class="pic four columns">
+                        <a href="css/images/makeshift/apr14.png" data-lightbox="apr14" data-title="Greet the Sea Poster">     
+                        <img width="100%" src="css/images/makeshift/apr14.png">
+                        </a>
+                    </div>
+                      <div class="pic four columns">
+                        <a href="css/images/makeshift/feb20.jpg" data-lightbox="feb20" data-title="What's Up Awards Poster">     
+                        <img width="100%" src="css/images/makeshift/feb20.jpg">
+                        </a>
+                    </div>
+                      <div class="pic four columns">
+                        <a href="css/images/makeshift/apr22.png" data-lightbox="apr22" data-title="Retirement Poster">     
+                        <img width="100%" src="css/images/makeshift/apr22.png">
+                        </a>
+                    </div>
+                    </div>
                      
                      <hr>
                      <p class="explanation twelve columns">
