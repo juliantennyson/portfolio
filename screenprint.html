@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lightbox.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -51,7 +52,14 @@
                 $("#loader").fadeOut(2000);
             };
     </script>
-   
+   <script src="js/lightbox.js"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'fadeDuration':200,
+      'wrapAround': true
+    })
+</script>
     
 </head>
 

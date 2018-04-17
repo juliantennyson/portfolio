@@ -38,6 +38,12 @@ body{
     from {opacity: 1;}
     to {opacity: 0;}
 }
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: .3;}
+}
     
 #loader{
     width:100vw;
@@ -530,11 +536,12 @@ background-image:url(images/reel.gif);
 }
     
     #mejpg{
-        position:absolute;
+        position:fixed;
         top:0;
         z-index:-2;
         opacity:.3;
         width:114%;
+        animation: fadeIn 2s ease backwards;
     }
   
     
