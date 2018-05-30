@@ -10,16 +10,28 @@
             <ul>
                 <li id="aboutlink" class="navlink">about</li>
                 <li id="contactlink" class="navlink">contact</li>
-                <li id="insta" class="navlink"><a href="https://vimeo.com/jdgz/" target="_blank" title="links out!">vimeo</a></li>
-                <li id="insta" class="navlink"><a href="https://www.instagram.com/jdzgn/" target="_blank" title="links out!">insta</a></li>
                 <li class="navlink"><a target="_blank" href="/css/images/pdf/JTennyson_Resumé.pdf">resumé</a></li>
                 
+                <li class="navlink" id="morework">more+</li>
                 
                 
                 
+ 
             </ul>
             
+            
+            <div id="socmed">
+            
+            <a href="https://www.instagram.com/jdzgn/" target="_blank">
+            <div id="instagram" class="socmed"></div>
+            </a>
+            <a href="https://vimeo.com/jdgz/" target="_blank">
+            <div id="vimeo" class="socmed"></div>
+            </a>
+            
             </div>
+            </div>
+            
 
  <script>
 
@@ -30,6 +42,7 @@
            $("#aboutlink").click(function(){
             $("#about").slideToggle(400);
             $("#contact").slideUp(400);
+            $("#expand").slideUp(400);
            });
             
             $("#xabout").click(function(){
@@ -39,11 +52,25 @@
             $("#contactlink").click(function(){
             $("#contact").slideToggle(400);
             $("#about").slideUp(400);
+            $("#expand").slideUp(400);
+
            });
             
             $("#xcon").click(function(){
             $("#contact").slideUp(400);
            });
+           
+           $("#morework").click(function(){
+           $("#expand").slideToggle(400);
+           $("#contact").slideUp(400);
+           $("#about").slideUp(400);
+           });
+            
+            $("#xmore").click(function(){
+            $("#expand").slideUp(400);            
+        
+            });
+            
             
             if (top.location.pathname === '/index.html' || top.location.pathname === '/' )
             {

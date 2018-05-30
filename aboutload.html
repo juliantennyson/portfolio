@@ -62,6 +62,55 @@
              </div>
                  
             </div>
+            <div id="row">
+             <div id="expand" class="ten columns initialH">
+                 
+                 <img src="css/images/x.svg" id="xmore" class="x one column">
+                 
+                 <div class="ten columns offset-by-one">
+                     
+                     <div class="row">
+                     <h1 class="introduction twelve columns">additional projects:</h1>
+                    </div>
+                     
+                     <p class="explanation twelve columns" id="hiddenonindex">
+                     <a href="/jeopardy.html" class="expandlink">jeopardy magazine</a>
+                         <br>
+                         
+                    <a href="/makeshift.html" class="expandlink">make.shift internship</a>
+                         <br>
+                         
+                    <a href="/motion.html" class="expandlink">motion work</a>
+            
+                         <br>
+                    <a href="/harvestr.html" class="expandlink">harvestr app case study</a>
+                         <br>
+                     
+                     
+                     </p>
+                     <p class="explanation twelve columns">
+                         
+                     <a href="/pubctr.html" class="expandlink">WWU publicity center work</a>
+                         <br>
+                         
+                    <a href="/screenprint.html" class="expandlink">screen printing projects</a>
+                    <br>
+                    <a href="/albumart.html" class="expandlink">album art infographic</a>
+                    <br>
+                    <a href="/thingiverse.html" class="expandlink">thingiverse branding</a>
+                         <br>
+                     
+                     
+                    
+                     </p>
+                     
+                     
+                 
+                 </div>
+                 
+             </div>
+             
+             </div>
 
 <script>
 
@@ -72,5 +121,14 @@ $("#xcon").click(function(){
 $("#xabout").click(function(){
             $("#about").slideUp(400);
            });
+           
+$("#xmore").click(function(){
+            $("#expand").slideUp(400);
+})
+
+if(top.location.pathname === '/index.html' || top.location.pathname === '/' ){
+
+$("#hiddenonindex").hide();
+}
 
 </script>
