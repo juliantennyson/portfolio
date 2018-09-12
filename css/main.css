@@ -22,7 +22,7 @@ li{
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     align-content: center;
     width:100%;
     background-color:#f6f6f6;
@@ -131,7 +131,7 @@ body{
 
 
 #header{
-    font-family: 'Space Mono', sans-serif;
+    font-family: 'IBM Plex Mono', sans-serif;
     font-weight:700;
     font-size:1.5em;
     padding:20px;
@@ -184,7 +184,7 @@ body{
 
 
 .bodytype{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size:1.4em;
     text-align: left !important;
     
@@ -225,7 +225,7 @@ body{
     width:100%;
     font-size:4em;
     color:white;
-    font-family: 'Space Mono', sans-serif;
+    font-family: 'IBM Plex Mono', sans-serif;
     transition:opacity .4s cubic-bezier(.66,.02,.55,.96),top .4s cubic-bezier(.66,.02,.55,.96);
 }
 
@@ -266,14 +266,19 @@ body{
 }
 
 .introduction{
-    font-family: 'Space Mono', sans-serif;
+    font-family: 'IBM Plex Mono', sans-serif;
     font-style:italic;
 }
 
 .explanation{
     font-size:2em;
-    font-family: 'Space Mono', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight:700;
+}
+.aexplanation{
+    font-size:2em;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight:400;
 }
 
 .x{
@@ -377,7 +382,7 @@ color:white;
 }
 
 .pic{
-    box-shadow: 1px 1px 10px #EAE8DB;
+    box-shadow: none;
     display:block;
     vertical-align: middle;
     line-height: 0;
@@ -456,11 +461,11 @@ color:white;
 /** MOTION **/
 
 #motion{
-background-image:url(images/reel.gif);
+background-image:url(images/gifs/gold.gif);
 }
 
 .projectpage #motion:hover{
-background-image:url(images/reel.gif);
+background-image:url(images/gifs/gold.gif);
 }
 
 
