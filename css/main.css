@@ -213,13 +213,13 @@ filter:blur(40);
     width:100%;
     background-size:996px;
     background-position:center;
-    transition: background .4s cubic-bezier(.66,.02,.55,.96), height .4s cubic-bezier(.66,.02,.55,.96);
+    transition: background .2s cubic-bezier(.66,.02,.55,.96), height .2s cubic-bezier(.66,.02,.55,.96);
 }
 
 .coverwrap{
     opacity:0;
     background-color:#f93;
-    transition:opacity .4s cubic-bezier(.66,.02,.55,.96);
+    transition:opacity .2s cubic-bezier(.66,.02,.55,.96);
     width:100%;
     height:100%;
 }
@@ -233,7 +233,7 @@ filter:blur(40);
     font-size:4em;
     color:white;
     font-family: 'IBM Plex Mono', sans-serif;
-    transition:opacity .4s cubic-bezier(.66,.02,.55,.96),top .4s cubic-bezier(.66,.02,.55,.96);
+    transition:opacity .2s cubic-bezier(.66,.02,.55,.96),top .4s cubic-bezier(.66,.02,.55,.96);
 }
 
 .take{
