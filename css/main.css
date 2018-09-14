@@ -236,6 +236,9 @@ filter:blur(40);
     transition:opacity .2s cubic-bezier(.66,.02,.55,.96),top .4s cubic-bezier(.66,.02,.55,.96);
 }
 
+.sectionsubtitle{
+font-size:20px; !important;
+}
 .take{
     opacity:.9 !important;
 }
