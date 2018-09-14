@@ -102,6 +102,13 @@ body{
     filter:blur(40)
 
 }
+
+#viapg{
+background-image:url(images/via/viaappmockup.png);
+background-size:130%;
+background-position:center;
+filter:blur(40);
+}
 #logo{
     width:100%;
     position:relative;
@@ -476,6 +483,11 @@ background-image:url(images/gifs/gold.gif);
 background-image:url(images/jeopardybanner.jpg)
 }
 
+/** VIA **/
+
+#via{
+background-image:url(images/viabanner.jpg)
+}
 /** SOCIAL MEDIA LINKS **/
 
 #socmed{
@@ -534,7 +546,12 @@ background-image:url(images/instahover.png);
     }
     
     .sectiontitle{
-        font-size:3em;
+        font-size:2em;
+        opacity:1;
+    }
+    
+    .coverwrap{
+    opacity:.7;
     }
     #socmed{
     width:100%;
@@ -544,6 +561,17 @@ background-image:url(images/instahover.png);
     .socmed{
     height:100%;
     }
+    
+    .take{
+    opacity:0 !important;
+}
+.add{
+    opacity:1 !important;
+}
+
+.move{
+    top:43% !important;
+}
 }
 
 
@@ -646,6 +674,10 @@ background-image:url(images/instahover.png);
     width:100%;
     background-size:cover;
 }
+    .coverwrap{
+    opacity:0;
+    }
+    
     .bigger{
         background-size:cover !important;
     }
