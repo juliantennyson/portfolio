@@ -113,14 +113,14 @@ filter:blur(40);
     width:100%;
     position:relative;
     left:00px;
-    transition:left .3s ease-in;
+    transition:left .26s ease-in;
 }
 
 #plogo{
     width:100%;
 }
 .slidey{
-        animation:bounce .3s ease backwards;
+        animation:bounce .26s ease backwards;
     }
 
 @keyframes bounce{
@@ -213,13 +213,13 @@ filter:blur(40);
     width:100%;
     background-size:996px;
     background-position:center;
-    transition: background .3s cubic-bezier(.66,.02,.55,.96), height .3s cubic-bezier(.66,.02,.55,.96);
+    transition: background .26s cubic-bezier(.66,.02,.55,.96), height .26s cubic-bezier(.66,.02,.55,.96);
 }
 
 .coverwrap{
     opacity:0;
     background-color:#f93;
-    transition:opacity .3s cubic-bezier(.66,.02,.55,.96);
+    transition:opacity .26s cubic-bezier(.66,.02,.55,.96);
     width:100%;
     height:100%;
 }
@@ -233,7 +233,7 @@ filter:blur(40);
     font-size:4em;
     color:white;
     font-family: 'IBM Plex Mono', sans-serif;
-    transition:opacity .3s cubic-bezier(.66,.02,.55,.96),top .3s cubic-bezier(.66,.02,.55,.96);
+    transition:opacity .26s cubic-bezier(.66,.02,.55,.96),top .26s cubic-bezier(.66,.02,.55,.96);
 }
 
 .sectionsubtitle{
@@ -379,7 +379,7 @@ color:white;
     cursor:pointer;
     z-index:2;
     margin-left:0;
-    transition: margin .3s ease;
+    transition: margin .26s ease;
     padding-right:0%;
     display:none;
     
