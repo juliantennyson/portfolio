@@ -43,11 +43,18 @@
 
         $(document).ready(function(){
             
-             //PARALLAX FUNCTION
+             //PARALLAX AND NEXT PROJECT FUNCTION
            $('#content').scroll(function(){
                 var x = 100 * this.scrollTop / (this.scrollHeight-this.clientHeight);
                 var y = ((-x)/2);
-               $('.parallax').css('background-position-y', y)
+               $('.parallax').css('background-position-y', y);
+               if (x > 89){
+                $("#nextproj").removeClass("initialH");
+                }
+                
+                if (x <= 89){
+                $("#nextproj").addClass("initialH");
+                }
             });
             
           
@@ -461,7 +468,9 @@ Fully downloadable on the VIA website<br></p>
                      <h2 class="introduction twelve columns">thank you for reading.</h2>
                      <hr class="twelve columns">
                     </div>
+                <a href="motion.html"><div id="nextproj" class="initialH"><p class="explanation">NEXT PROJECT</p></div></a>    
         </div>
+        
     </div>
                  
 </div>

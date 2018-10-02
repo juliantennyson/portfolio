@@ -44,6 +44,11 @@ body{
     from {opacity: 0;}
     to {opacity: .3;}
 }
+
+@keyframes GoUp {
+    from  {bottom:0px;opacity:0}
+    to {bottom:30px;opacity:1}
+}
     
 #loader{
     width:100vw;
@@ -178,6 +183,30 @@ filter:blur(40);
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+#nextproj{
+    position:fixed;
+    bottom:30px;
+    right:40px;
+    background-color:rgba(255,255,255,.7);
+    box-shadow:0px 0px 5px #999;
+    color:black;
+    z-index:20;
+    padding:10px;
+    height:30px;
+    border-radius:10px;
+    animation:GoUp .4s ease;
+    transition: box-shadow .3s ease, background-color .2s ease, color .2s ease, bottom .2s ease;;
+}
+
+#nextproj:hover{
+background-color:#f93;
+bottom:35px;
+color:black;
+box-shadow:0px 5px 7px #999;
+color:white;
+
 }
 /** **/
 
@@ -738,5 +767,9 @@ background-image:url(images/instahover.png);
     .project{
         margin-bottom:5%;
         box-shadow: 2px 2px 5px #EAE8DB;
+    }
+    
+    #nextproj{
+    display:none;
     }
 }
