@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Julian Tennyson | Dr. Magnuson's Shit For Gardening</title>
+  <meta name="description" content="Dr. Magnuson's Shit For Gardening is a fresh take on gardening supplies.">
+  
+  <meta name="author" content="julian tennyson">
+  <meta property="og:image" content="/css/images/jeopardybanner.jpg">
+  <meta property="og:description" content="Dr. Magnuson's Shit For Gardening is a fresh take on gardening supplies.">
+  <meta property="og:title" content="Julian Tennyson | Dr. Magnuson's Shit For Gardening">
+  
+
+
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+ <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:600|IBM+Plex+Sans:400,700" rel="stylesheet">
+
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/ico" href="css/images/colorblock.ico">
+
+  <!-- SCRIPTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="js/lightbox.js"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'fadeDuration':200,
+      'wrapAround': true
+    })
+</script>
+
+     <script>
+
+        $(document).ready(function(){
+            
+             //PARALLAX AND NEXT PROJECT FUNCTION
+           $('#content').scroll(function(){
+                var x = 100 * this.scrollTop / (this.scrollHeight-this.clientHeight);
+                var y = ((-x)/2);
+               $('.parallax').css('background-position-y', y);
+               
+               if (x > 89){
+                $("#nextproj").removeClass("initialH");
+                }
+                
+                if (x <= 89){
+                $("#nextproj").addClass("initialH");
+                }
+            });
+            
+                
+            
+            
+        });
+    
+    function loader(){
+                $("#loader").fadeOut(2000);
+            };
+    </script>
+</head>
+
+<!-- -------------------------
+------------------------------
+----------SIDEBAR ------------
+------------------------------
+------------------------------>
+    <body onload="loader()" id="shitpg" class="projectpage parallax">
+        <div id="loader"></div>
+        
+    
+<div id="wrapper" class="twelve columns container">
+    
+   
+    
+
+    <div id="header" class="two columns">
+        
+        
+        <div id="sidebar"></div>
+        
+        <script>
+            $(function(){
+                $("#sidebar").load("sidebar.html");
+                    });
+        </script>
+        
+    </div>
+    
+         <div id="content" class="ten columns">
+             
+             
+             
+             <div id="aboutload"></div>
+        <script>
+        $(function(){
+                      $("#aboutload").load("aboutload.html");
+                    });
+            </script>
+             
+             
+<!-- -------------------------
+------------------------------
+----------PROJECTS -----------
+------------------------------
+----------vvvvvvvv------------>
+            
+    <div id="row">
+             
+             <div class="moreinfo twelve columns">
+                 
+                                  <a href="index.html"><img src="css/images/v.svg" class="v one column"></a>
+
+                 
+                 <div class="twelve columns" style="padding-right:3%;padding-left:3%;">
+                     
+                     <div class="row">
+                     
+                    </div>
+                    
+                     <div class="twelve columns">
+                        <a href="css/images/shit/shit1.jpg" data-lightbox="shit">     
+                        <img width="100%" src="css/images/shit/shit1.jpg">
+                        </a>
+                    </div>
+                    
+                     <h3 class="introduction twelve columns">
+                         
+                     Dr. Magnuson's Shit For Gardening is a reimagining of a product system and point of purchase.
+                     </h3>
+                     
+                     <p class="explanation twelve columns">It is aimed at using sustainable materials and no-nonsense branding to attract future-minded patrons to think about the impact the products they use might have.<br><br>
+                     
+                     </p> 
+                     <hr>
+                     <div class="row">
+                     <div class="six columns">
+                        <a href="css/images/shit/shit.jpg" data-lightbox="shit">     
+                        <img width="100%" src="css/images/shit/shit.jpg">
+                        </a>
+                    </div>
+                    
+                    <div class="six columns">
+                        <p class="bodytype row">
+                        The point of purchase was hand made using recycled materials, making sure to emphasize the process in the final piece. This specific POP would be a display at the point of sale to exhibit everything Dr. Magnuson's has to offer. 
+                        
+                        </p>
+                        <div class="row">
+                        <div class="six columns">
+                        <a href="css/images/shit/process1.jpg" data-lightbox="process">     
+                        <img width="100%" src="css/images/shit/process1.jpg">
+                        </a>
+                        </div>
+                        <div class="six columns">
+                        <a href="css/images/shit/process2.jpg" data-lightbox="process">     
+                        <img width="100%" src="css/images/shit/process2.jpg">
+                        </a>
+                        </div>
+                        </div>
+                    </div>
+                   
+                     </div>
+                     <hr>
+                     
+                     <h3 class="introduction twelve columns">
+                     a full process PDF can be found <span style="background-color:#f93"><a href="css/images/pdf/GardeningShitProcess.pdf" target="_blank">here.</a></span>
+                     </h3>
+                     
+                     <hr class="twelve columns">
+                     <div class="row bump">
+                     <div class="twelve columns">
+                        <a href="css/images/shit/shit4.jpg" data-lightbox="shit">     
+                        <img width="100%" src="css/images/shit/shit4.jpg">
+                        </a>
+                    </div>
+                     </div>
+                     
+                     <div class="row bump">
+                     <div class="six columns">
+                        <a href="css/images/shit/shit6.jpg" data-lightbox="shit">     
+                        <img width="100%" src="css/images/shit/shit6.jpg">
+                        </a>
+                     </div>
+                     
+                     <div class="six columns">
+                        <a href="css/images/shit/shit7.jpg" data-lightbox="shit">     
+                        <img width="100%" src="css/images/shit/shit7.jpg">
+                        </a>
+                     </div>
+                     </div>
+                     
+                     <div class="row bump">
+                     <div class="six columns">
+                        <a href="css/images/shit/shit9.jpg" data-lightbox="shit">     
+                        <img width="100%" src="css/images/shit/shit9.jpg">
+                        </a>
+                     </div>
+                     
+                     <div class="six columns">
+                        <a href="css/images/shit/shit8.jpg" data-lightbox="shit">     
+                        <img width="100%" src="css/images/shit/shit8.jpg">
+                        </a>
+                     </div>
+                     </div>
+                     
+                     <div class="row bump">
+                     <div class="six columns">
+                        <a href="css/images/shit/print1.jpg" data-lightbox="shit">     
+                        <img width="100%" src="css/images/shit/print1.jpg">
+                        </a>
+                     </div>
+                     
+                     <div class="six columns">
+                        <a href="css/images/shit/print2.jpg" data-lightbox="shit">     
+                        <img width="100%" src="css/images/shit/print2.jpg">
+                        </a>
+                     </div>
+                     </div>
+                     
+                     <hr>
+                     
+                     
+                     
+                     <br><br>
+                 </div>
+                 <a href="screenprint.html"><div id="nextproj" class="initialH"><p class="explanation">NEXT PROJECT</p></div></a>
+             </div>
+                 
+            </div>
+           
+    
+             
+             
+<!-- ------^^^^^^^^-----------
+------------------------------
+----------PROJECTS------------
+------------------------------
+------------------------------>
+    </div>
+    
+            <div id=footer>&copy; julian tennyson 2018</div>
+
+</div>
+        
+
+    
+    
+<!-- -------------------------
+------------------------------
+----------END ----------------
+------------------------------
+------------------------------>
+</body>
+</html>

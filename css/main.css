@@ -114,6 +114,13 @@ background-size:130%;
 background-position:center;
 filter:blur(40);
 }
+
+#shitpg{
+background-image:url(images/shit/shitbg.jpg);
+background-size:130%;
+filter:blur(40);
+
+}
 #logo{
     width:100%;
     position:relative;
@@ -307,6 +314,11 @@ font-size:20px; !important;
 .introduction{
     font-family: 'IBM Plex Mono', sans-serif;
     font-style:italic;
+}
+
+.introduction a:hover{
+    color:white;
+    background-color:#f93;
 }
 
 .explanation{
