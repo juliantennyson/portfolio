@@ -27,6 +27,7 @@ body{
     width:100%;
     background-color:#f6f6f6;
     font-size:1em;
+    overflow:visible;
     
 }
 
@@ -308,7 +309,7 @@ font-size:20px; !important;
     padding-top:45px;
     max-width:994px;
     z-index:2;
-    overflow:scroll;
+    overflow-y:scroll;
 }
 
 .introduction{
@@ -360,7 +361,7 @@ font-size:20px; !important;
     max-width:994px;
     z-index:4;
     color:black;
-    overflow:scroll;
+    overflow-y:scroll;
 }
 
 .contactlinks:hover{
@@ -379,7 +380,7 @@ font-size:20px; !important;
     max-width:994px;
     z-index:5;
     color:black;
-    overflow:scroll;
+    overflow-y:scroll;
 }
 
 .expandlink:hover{
@@ -674,8 +675,8 @@ background-image:url(images/instahover.png);
     top:0px;
     left:0px !important;
     padding-top:30px;
-    width:100vw;
     z-index:2;
+    -webkit-overflow-scrolling: touch;
 }
     #contact{
     height:100vh;
@@ -687,6 +688,10 @@ background-image:url(images/instahover.png);
     z-index:2;
 }
 
+.noScroll{
+    overflow:hidden;
+}
+
 #expand{
 
     height:100vh;
@@ -696,6 +701,7 @@ background-image:url(images/instahover.png);
     padding-top:30px;
     width:100vw;
     z-index:2;
+  -webkit-overflow-scrolling: touch;
 }
     
     #mejpg{
@@ -709,7 +715,7 @@ background-image:url(images/instahover.png);
   
     
     #content{
-    height:100%;
+    
     overflow:visible;
 }
     .project{

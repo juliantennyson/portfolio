@@ -38,39 +38,91 @@
 
         $(document).ready(function(){
             
-            
-            
+            var fixed = document.getElementById('about');
+
+fixed.addEventListener('touchmove', function(e) {
+
+        e.preventDefault();
+
+}, false);
+        
            $("#aboutlink").click(function(){
             $("#about").slideToggle(400);
             $("#contact").slideUp(400);
             $("#expand").slideUp(400);
+            
+            $('#about').attr("tabindex", -1).focus();
+            
+            $('body').addClass("noScroll");
+            
+            setTimeout(function(){if($("#about").is(':hidden')){
+            $('#content').attr("tabindex", -1).focus();
+            $('body').removeClass("noScroll");
+            }
+            },405);
+            
+            
+           
            });
+        
             
             $("#xabout").click(function(){
             $("#about").slideUp(400);
+            $('body').removeClass("noScroll");
+            $('#content').attr("tabindex", -1).focus();
+            
            });
             
             $("#contactlink").click(function(){
             $("#contact").slideToggle(400);
             $("#about").slideUp(400);
             $("#expand").slideUp(400);
+            
+            $('#contact').attr("tabindex", -1).focus();
+
+            
+            $('body').addClass("noScroll");
+            
+            setTimeout(function(){if($("#contact").is(':hidden')){
+            $('#content').attr("tabindex", -1).focus();
+            $('body').removeClass("noScroll");
+            }
+           },405);
 
            });
             
             $("#xcon").click(function(){
             $("#contact").slideUp(400);
+            $('body').removeClass("noScroll");
+            $('#content').attr("tabindex", -1).focus();
+            
            });
            
            $("#morework").click(function(){
            $("#expand").slideToggle(400);
            $("#contact").slideUp(400);
            $("#about").slideUp(400);
+           
+           $('#expand').attr("tabindex", -1).focus();
+
+           
+           $('body').addClass("noScroll");
+           
+           setTimeout(function(){if($("#expand").is(':hidden')){
+            $('#content').attr("tabindex", -1).focus();
+            $('body').removeClass("noScroll");
+            }
+           },405);
            });
             
             $("#xmore").click(function(){
-            $("#expand").slideUp(400);            
+            $("#expand").slideUp(400);
+            $('body').removeClass("noScroll");
+            $('#content').attr("tabindex", -1).focus();
         
             });
+            
+            
             
             
             if (top.location.pathname === '/index.html' || top.location.pathname === '/' )
