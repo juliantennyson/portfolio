@@ -38,13 +38,6 @@
 
         $(document).ready(function(){
             
-            var fixed = document.getElementById('about');
-
-fixed.addEventListener('touchmove', function(e) {
-
-        e.preventDefault();
-
-}, false);
         
            $("#aboutlink").click(function(){
             $("#about").slideToggle(400);
@@ -55,7 +48,7 @@ fixed.addEventListener('touchmove', function(e) {
             
             $('body').addClass("noScroll");
             
-            setTimeout(function(){if($("#about").is(':hidden')){
+            setTimeout(function(){if($("#about").is(':hidden') && top.location.pathname !== '/index.html' && top.location.pathname !== '/'){
             $('#content').attr("tabindex", -1).focus();
             $('body').removeClass("noScroll");
             }
@@ -69,6 +62,7 @@ fixed.addEventListener('touchmove', function(e) {
             $("#xabout").click(function(){
             $("#about").slideUp(400);
             $('body').removeClass("noScroll");
+            if(top.location.pathname !== '/index.html' && top.location.pathname !== '/' && top.location.pathname !== '/index')
             $('#content').attr("tabindex", -1).focus();
             
            });
@@ -83,7 +77,7 @@ fixed.addEventListener('touchmove', function(e) {
             
             $('body').addClass("noScroll");
             
-            setTimeout(function(){if($("#contact").is(':hidden')){
+            setTimeout(function(){if($("#contact").is(':hidden') && top.location.pathname !== '/index.html' && top.location.pathname !== '/'){
             $('#content').attr("tabindex", -1).focus();
             $('body').removeClass("noScroll");
             }
@@ -94,6 +88,7 @@ fixed.addEventListener('touchmove', function(e) {
             $("#xcon").click(function(){
             $("#contact").slideUp(400);
             $('body').removeClass("noScroll");
+            if(top.location.pathname !== '/index.html' && top.location.pathname !== '/' && top.location.pathname !== '/index')
             $('#content').attr("tabindex", -1).focus();
             
            });
@@ -108,7 +103,7 @@ fixed.addEventListener('touchmove', function(e) {
            
            $('body').addClass("noScroll");
            
-           setTimeout(function(){if($("#expand").is(':hidden')){
+           setTimeout(function(){if($("#expand").is(':hidden') && top.location.pathname !== '/index.html' && top.location.pathname !== '/'){
             $('#content').attr("tabindex", -1).focus();
             $('body').removeClass("noScroll");
             }
@@ -118,6 +113,7 @@ fixed.addEventListener('touchmove', function(e) {
             $("#xmore").click(function(){
             $("#expand").slideUp(400);
             $('body').removeClass("noScroll");
+            if(top.location.pathname !== '/index.html' && top.location.pathname !== '/' && top.location.pathname !== '/index')
             $('#content').attr("tabindex", -1).focus();
         
             });
@@ -125,7 +121,7 @@ fixed.addEventListener('touchmove', function(e) {
             
             
             
-            if (top.location.pathname === '/index.html' || top.location.pathname === '/' )
+            if (top.location.pathname === '/index.html' || top.location.pathname === '/' || top.location.pathname === '/index' )
             {
                 
             $("body").hover(function(){
@@ -151,9 +147,11 @@ fixed.addEventListener('touchmove', function(e) {
                 
             };
             
-            if (top.location.pathname !== '/index.html' && top.location.pathname !== '/')
+            if (top.location.pathname !== '/index.html' && top.location.pathname !== '/' && top.location.pathname !== '/index')
             {
-                                         
+            
+            $('#content').attr("tabindex", -1).focus();
+                   
             var reset; 
                 
             $("#header").mouseenter(function(){
