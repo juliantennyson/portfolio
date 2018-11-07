@@ -74,11 +74,17 @@
                  
                  <div class="ten columns offset-by-one">
                      
-                     <div class="row">
-                     <h1 class="introduction twelve columns">Additional projects:</h1>
+                     
+                    
+                    <div class="row hiddenonindex">
+                     <h1 class="introduction twelve columns">all projects:</h1>
+                    </div>
+                    
+                    <div class="row hiddenoffindex">
+                     <h1 class="introduction twelve columns">additional projects:</h1>
                     </div>
                      
-                     <p class="explanation twelve columns" id="hiddenonindex">
+                     <p class="explanation twelve columns" class="hiddenonindex">
                      <a href="/jeopardy.html" class="expandlink">Jeopardy Magazine</a><span class="aexplanation" style="font-size:100%"> - print media</span>
                          <br>
                          
@@ -143,7 +149,11 @@ $("#xmore").click(function(){
 
 if(top.location.pathname === '/index.html' || top.location.pathname === '/' ){
 
-$("#hiddenonindex").hide();
+$(".hiddenonindex").hide();
+}
+else{
+$(".hiddenoffindex").hide();
+
 }
 
 </script>
