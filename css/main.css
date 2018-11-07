@@ -684,8 +684,9 @@ background-image:url(images/instahover.png);
     top:0px;
     left:0px !important;
     padding-top:30px;
-    width:100vw;
     z-index:2;
+    -webkit-overflow-scrolling: touch;
+
 }
 
 .noScroll{
