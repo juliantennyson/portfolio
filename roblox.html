@@ -47,15 +47,25 @@ $(document).ready(function(){
         $("#prefs").slideToggle(400);
    });
     $(".down").click(function(){
-    
-    var roblox = document.getElementById("robloxsound");
-       roblox.play()
+ //Thanks to u/Tryphoss for the spammable audio
+    var audio = document.createElement("audio");
+        audio.src = "css/audio/roblox.mp3";
+        audio.addEventListener("ended", function () {
+            document.removeChild(this);
+        }, false);
+        audio.play();
+   
     });
-    
+   
     $(".up").click(function(){
-    
-    var robloxup = document.getElementById("robloxup");
-       robloxup.play()
+   
+    var audio = document.createElement("audio");
+        audio.src = "css/audio/babyup.mp3";
+        audio.addEventListener("ended", function () {
+            document.removeChild(this);
+        }, false);
+        audio.play();
+   
     });
     
     var robloxreset = document.getElementById("robloxreset");
