@@ -59,6 +59,8 @@ $(document).ready(function(){
     });
     
     var robloxreset = document.getElementById("robloxreset");
+    
+    var robloxdeath = document.getElementById("robloxdeath");
        
     
     var llife = 20;
@@ -80,6 +82,7 @@ $(document).ready(function(){
         ldown.onclick = function() {
         llife -= 1;
         llifecounter.innerHTML = llife;
+        if (llife == 0) {robloxdeath.play()};
 
 };
 
@@ -98,6 +101,8 @@ $(document).ready(function(){
         rdown.onclick = function() {
         rlife -= 1;
         rlifecounter.innerHTML = rlife;
+        if (rlife == 0) {robloxdeath.play()};
+
 };
 
     var rup = document.getElementById("rup");
@@ -284,6 +289,8 @@ $("#mute").click(function(){
 <audio id="robloxsound" src="css/audio/roblox.mp3"></audio>
 <audio id="robloxup" src="css/audio/babyup.mp3"></audio>
 <audio id="robloxreset" src="css/audio/robloxreset.mp3"></audio>
+<audio id="robloxdeath" src="css/audio/deathsound.mp3"></audio>
+
 
     
     
