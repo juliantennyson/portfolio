@@ -1,3 +1,180 @@
+/** ROBLOX **/
+
+#roblox{
+width:100vw;
+height:100vh;
+position:fixed;
+}
+
+#lplayer{
+width:50%;
+height:100%;
+position:static;
+background-color:lightcoral;
+float:left;
+}
+
+#llife{
+position:absolute;
+top:37%;
+width:50vw;
+height:100vh;
+text-align:center;
+font-size:10em;
+font-family:'IBM Plex Mono', sans-serif;
+color:white;
+pointer-events: none;
+}
+
+#rlife{
+position:absolute;
+top:37%;
+width:50vw;
+height:100vh;
+text-align:center;
+font-size:10em;
+font-family:'IBM Plex Mono', sans-serif;
+color:white;
+pointer-events: none;
+}
+
+#rplayer{
+width:50%;
+height:100%;
+position:static;
+float:left;
+background-color:lightblue;
+}
+
+.up{
+    position:relative;
+    height:50%;
+}
+
+.up:hover{
+    background-color:rgba(1,2,3,.2);
+    cursor:pointer;
+
+}
+
+.down{
+    position:relative;
+    height:50%;
+    cursor:pointer;
+
+
+}
+
+.down:hover{
+    background-color:rgba(1,2,3,.2);
+    }
+    
+    
+#settings{
+    position:absolute;
+    top:30px;
+    left:30px;
+    height:auto;
+    width:auto;
+    margin:0 auto;
+    text-align: center;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color:rgba(1,2,3,.2);
+    font-family:'IBM Plex Mono',sans-serif;
+    color:white;
+    font-size:1em;
+}
+
+#settings:hover{
+background-color:rgba(1,2,3,.4);
+cursor:pointer;
+}
+
+#reset{
+    position:absolute;
+    top:30px;
+    left:110px;
+    height:auto;
+    width:auto;
+    margin:0 auto;
+    text-align: center;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color:rgba(1,2,3,.2);
+    font-family:'IBM Plex Mono',sans-serif;
+    color:white;
+    font-size:1em;
+}
+
+#reset:hover{
+background-color:rgba(1,2,3,.4);
+cursor:pointer;
+}
+
+#prefs{
+    position:absolute;
+    left:30px;
+    top:50px;
+    width:auto;
+    height:90px;
+    background-color:rgba(1,2,3,.2);
+    padding:5px;
+    padding-top:10px;
+    margin-left:5px;
+    
+}
+
+.robloxtext{
+    height:10px ;
+    color:white;
+    font-size:2em ;
+    line-height: 1.5 ;
+    float:left;
+}
+
+.color{
+width:20px;
+height:20px;
+float:left;
+margin:5px;
+    cursor:pointer;
+}
+
+.color:hover{
+opacity:.8;
+}
+#lred{background-color:lightcoral}
+#lblu{background-color:lightblue}
+#lgrn{background-color:lightgreen}
+#lblk{background-color:gray}
+#lwhi{background-color:lightyellow}
+
+#rred{background-color:lightcoral}
+#rblu{background-color:lightblue}
+#rgrn{background-color:lightgreen}
+#rblk{background-color:gray}
+#rwhi{background-color:lightyellow}
+
+.life{
+    background-color:rgba(1,2,3,.4);
+    margin:3px;
+    color:white;
+    text-align:center;
+    
+    
+    }
+    
+
+
+
+
+
+/** **/ 
+
+
 *{
   outline: none !important;  
 }

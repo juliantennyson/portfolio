@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Julian Tennyson</title>
+  <meta name="description" content="Julian Tennyson is a graphic designer with an interest in sustainable design, design for social good and multimedia. This portfolio website contains work samples and contact information as well as a short bio.">
+  <meta name="author" content="julian tennyson">
+  <meta property="og:image" content="http://juliantennyson.com/css/images/og.jpg
+"/>
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:600|IBM+Plex+Sans:400,700" rel="stylesheet">
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+
+    
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="shortcut icon" type="image/ico" href="css/images/colorblock.ico">
+
+  <!-- SCRIPTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––- -->
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+
+
+$(document).ready(function(){
+
+    $("#settings").click(function(){
+        $("#prefs").slideToggle(400);
+   });
+    $(".down").click(function(){
+    
+    var roblox = document.getElementById("robloxsound");
+       roblox.play()
+    });
+    
+    $(".up").click(function(){
+    
+    var robloxup = document.getElementById("robloxup");
+       robloxup.play()
+    });
+    
+    var robloxreset = document.getElementById("robloxreset");
+       
+    
+    var llife = 20;
+    var rlife = 20;
+    
+    var reset = document.getElementById("reset");
+        reset.onclick = function() {
+        llife = 20;
+        rlife = 20;
+        llifecounter.innerHTML = llife;
+        rlifecounter.innerHTML = rlife;
+        robloxreset.play();
+        }
+    
+    var llifecounter = document.getElementById("llife");
+    llifecounter.innerHTML = llife;
+    
+    var ldown = document.getElementById("ldown");
+        ldown.onclick = function() {
+        llife -= 1;
+        llifecounter.innerHTML = llife;
+
+};
+
+    var lup = document.getElementById("lup");
+        lup.onclick = function() {
+        llife += 1;
+        llifecounter.innerHTML = llife;
+
+};
+
+    var rlifecounter = document.getElementById("rlife");
+        rlifecounter.innerHTML = rlife;
+
+    
+    var rdown = document.getElementById("rdown");
+        rdown.onclick = function() {
+        rlife -= 1;
+        rlifecounter.innerHTML = rlife;
+};
+
+    var rup = document.getElementById("rup");
+        rup.onclick = function() {
+        rlife += 1;
+        rlifecounter.innerHTML = rlife;
+
+};
+     var l20 = document.getElementById("l20");
+        l20.onclick = function() {
+        llife = 20;
+        rlife = 20;
+        rlifecounter.innerHTML = rlife;
+        llifecounter.innerHTML = llife;
+};
+
+    var l30 = document.getElementById("l30");
+        l30.onclick = function() {
+        llife = 30;
+        rlife = 30;
+        rlifecounter.innerHTML = rlife;
+        llifecounter.innerHTML = llife;
+
+
+};
+
+var l40 = document.getElementById("l40");
+        l40.onclick = function() {
+        llife = 40;
+        rlife = 40;
+        rlifecounter.innerHTML = rlife;
+        llifecounter.innerHTML = llife;
+
+
+};
+    $("#lred").click(function(){
+        $("#lplayer").css("background-color", "lightred");
+        $("#llife").css("color", "white");
+    
+    });
+    $("#lblu").click(function(){
+        $("#lplayer").css("background-color", "lightblue");
+        $("#llife").css("color", "white");
+    
+    });
+    $("#lgrn").click(function(){
+        $("#lplayer").css("background-color", "lightgreen");
+        $("#llife").css("color", "white");
+        
+    
+    });
+    $("#lblk").click(function(){
+        $("#lplayer").css("background-color", "gray");
+        $("#llife").css("color", "white");
+    
+    });
+    $("#lwhi").click(function(){
+        $("#lplayer").css("background-color", "lightyellow");
+        $("#llife").css("color", "gray");
+    
+    });
+    
+    $("rred").click(function(){
+        $("#rplayer").css("background-color", "lightred");
+        $("#rlife").css("color", "white");
+    
+    });
+    $("#rblu").click(function(){
+        $("#rplayer").css("background-color", "lightblue");
+        $("#rlife").css("color", "white");
+    
+    });
+    $("#rgrn").click(function(){
+        $("#rplayer").css("background-color", "lightgreen");
+        $("#rlife").css("color", "white");
+        
+    
+    });
+    $("#rblk").click(function(){
+        $("#rplayer").css("background-color", "gray");
+        $("#rlife").css("color", "white");
+    
+    });
+    $("#rwhi").click(function(){
+        $("#rplayer").css("background-color", "lightyellow");
+        $("#rlife").css("color", "gray");
+    
+    });
+});
+
+
+
+</script>
+    
+</head>
+
+<!-- -------------------------
+------------------------------
+----------SIDEBAR ------------
+------------------------------
+------------------------------>
+    <body>
+    
+<div id="roblox">
+    
+   
+    <div id="lplayer">
+    <div id="llife">
+    20
+        
+    </div>
+    <div id="lup" class="up"></div>
+    <div id="ldown" class="down"></div>
+    
+    
+    
+    </div>
+
+    <div id="rplayer">
+    <div id="rlife">
+    20
+        
+    </div>
+    <div id="rup" class="up"></div>
+    <div id="rdown" class="down"></div>
+    
+    
+    </div>
+    
+    <div id="settings">
+    SETTINGS
+    </div>
+    
+    <div id="reset">
+    RESET TO 20
+    </div>
+    
+    <div id="prefs" class="initialH">
+    <div id="lcolor"><div class="robloxtext">left color:</div>
+    
+    <div id="lred" class="color"></div>
+    <div id="lblu" class="color"></div>
+    <div id="lgrn" class="color"></div>
+    <div id="lblk" class="color"></div>
+    <div id="lwhi" class="color"></div>
+    
+    </div>
+    <div id="rcolor"><div class="robloxtext">right color:</div>
+    
+    <div id="rred" class="color"></div>
+    <div id="rblu" class="color"></div>
+    <div id="rgrn" class="color"></div>
+    <div id="rblk" class="color"></div>
+    <div id="rwhi" class="color"></div>
+    
+    </div>
+    <div id="life total"><div class="robloxtext">lifetotal:</div>
+    <div id="l20" class="color life">20</div>
+    <div id="l30" class="color life">30</div>
+    <div id="l40" class="color life">40</div>
+    </div>
+
+
+
+    
+    </div>
+    
+    
+    
+
+</div>
+        
+<audio id="robloxsound" src="css/audio/roblox.mp3"></audio>
+<audio id="robloxup" src="css/audio/robloxup.mp3"></audio>
+<audio id="robloxreset" src="css/audio/robloxreset.mp3"></audio>
+
+    
+    
+<!-- -------------------------
+------------------------------
+----------END ----------------
+------------------------------
+------------------------------>
+</body>
+</html>
