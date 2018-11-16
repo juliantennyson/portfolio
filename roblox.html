@@ -133,6 +133,13 @@ var l40 = document.getElementById("l40");
 
 
 };
+
+$("#mute").click(function(){
+    $("#robloxsound").prop('muted',true);
+    $("#robloxup").prop('muted',true);
+    $("#robloxreset").prop('muted',true);
+
+});
     $("#lred").click(function(){
         $("#lplayer").css("background-color", "lightcoral");
         $("#llife").css("color", "white");
@@ -235,6 +242,10 @@ var l40 = document.getElementById("l40");
     RESET TO 20
     </div>
     
+    <div id="mute">
+    MUTE :-&#40;
+    </div>
+    
     <div id="prefs" class="initialH">
     <div id="lcolor"><div class="robloxtext">left color:</div>
     
@@ -271,7 +282,7 @@ var l40 = document.getElementById("l40");
 </div>
         
 <audio id="robloxsound" src="css/audio/roblox.mp3"></audio>
-<audio id="robloxup" src="css/audio/robloxup.mp3"></audio>
+<audio id="robloxup" src="css/audio/babyup.mp3"></audio>
 <audio id="robloxreset" src="css/audio/robloxreset.mp3"></audio>
 
     

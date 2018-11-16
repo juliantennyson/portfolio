@@ -114,6 +114,29 @@ background-color:rgba(1,2,3,.4);
 cursor:pointer;
 }
 
+#mute{
+    position:absolute;
+    top:30px;
+    left:210px;
+    height:auto;
+    width:auto;
+    margin:0 auto;
+    text-align: center;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color:rgba(1,2,3,0);
+    font-family:'IBM Plex Mono',sans-serif;
+    color:rgba(1,2,3,0);
+    font-size:1em;
+}
+
+#mute:hover{
+background-color:rgba(1,2,3,.4);
+cursor:pointer;
+color:white;
+}
+
 #prefs{
     position:absolute;
     left:30px;
