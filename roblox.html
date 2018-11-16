@@ -53,7 +53,9 @@ $(document).ready(function(){
         audio.addEventListener("ended", function () {
             document.removeChild(this);
         }, false);
+        if (!muted){
         audio.play();
+        };
    
     });
    
@@ -64,7 +66,9 @@ $(document).ready(function(){
         audio.addEventListener("ended", function () {
             document.removeChild(this);
         }, false);
+        if (!muted){
         audio.play();
+        };
    
     });
     
@@ -149,10 +153,13 @@ var l40 = document.getElementById("l40");
 
 };
 
+var muted = false;
+
 $("#mute").click(function(){
     $("#robloxsound").prop('muted',true);
     $("#robloxup").prop('muted',true);
     $("#robloxreset").prop('muted',true);
+    muted = true;
 
 });
     $("#lred").click(function(){
