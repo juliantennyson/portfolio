@@ -655,6 +655,20 @@ color:white;
     height:325px;
     padding:10px;
 }
+
+/** LOGOS **/ 
+
+#logos{
+    background-image:url(images/logobanner.png);
+}
+
+#logopg{
+    background-image:url(images/logobanner.png);
+    background-size:130%;
+    background-position:top;
+    filter:blur(40);
+
+}
 /** MAKESHIFT **/
 
 
