@@ -309,6 +309,14 @@ body{
 
 }
 
+#symposeumpg{
+    background-image:url(images/symposeum/DSC06802.jpg);
+    background-size:130%;
+    background-position:top;
+    filter:blur(40)
+
+}
+
 #viapg{
 background-image:url(images/via/viaappmockup.png);
 background-size:130%;
@@ -533,6 +541,11 @@ font-size:20px; !important;
     font-weight:400;
 }
 
+.explanationlink{
+    font-size:inherit;
+    text-decoration: underline;
+}
+
 .x{
     position:relative;
     left:20px;
@@ -597,10 +610,11 @@ color:white;
 #footer{
     position:fixed;
     bottom:0px;
-    padding:2px;
+    padding:4px;
     width:100%;
     opacity: .8;
     font-size:.1em;
+    color:lightgray;
 }
 
 
@@ -746,6 +760,12 @@ background-image:url(images/jeopardybanner.jpg)
 
 #via{
 background-image:url(images/viabanner.jpg)
+}
+
+/** SYMPOSEUM **/
+
+#symposeum{
+background-image:url(images/symposeumbanner.jpg)
 }
 /** SOCIAL MEDIA LINKS **/
 
