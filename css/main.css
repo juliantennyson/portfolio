@@ -318,7 +318,15 @@ body{
 }
 #konapg{
     background-image:url(images/kona/DSC07075.jpg);
-    background-size:15%;
+    background-size:10%;
+    background-position:top;
+    filter:blur(40)
+
+}
+
+#flymapg{
+    background-image:url(images/flyma/layer0.jpg);
+    background-size:100%;
     background-position:top;
     filter:blur(40)
 
@@ -460,7 +468,7 @@ color:white;
 
 .project{
     position:relative;
-    height:25vh;
+    height:20vh;
     width:100%;
     background-size:996px;
     background-position:center;
@@ -510,7 +518,7 @@ font-size:20px; !important;
 }
 
 .enshorten{
-    height:17.5vh;
+    height:12.5vh;
 }
 
 
@@ -779,6 +787,14 @@ background-image:url(images/symposeumbanner.jpg)
 #kona{
 background-image:url(images/konabanner.jpg)
 }
+
+/** FLYMACHINE **/
+
+
+#flymachine{
+background-image:url(images/flymabanner.gif)
+}
+
 /** SOCIAL MEDIA LINKS **/
 
 #socmed{
