@@ -16,8 +16,7 @@
                     <div class="row">
                    
                     
-                    <a href="css/images/julian.jpg" data-lightbox="me" data-title="A Picture of Yours Truly">
-                    <img id="mejpg" class="twelve columns" src="css/images/julian.jpg" width="100%"></a>
+                    <img id="me" class="twelve columns" src="css/images/1.png" width="100%">
                     </div><div class="row">
                     <br><br>
                      <p id="aboutme" class="aexplanation twelve columns">
@@ -144,8 +143,18 @@
 
 <script>
 
-
-                
+$("#me").mouseenter(function(){
+    
+    $("#me").attr("src","css/images/2.png");
+});
+    
+    
+$("#me").mouseleave(function(){
+    
+    $("#me").attr("src","css/images/1.png");
+});
+      
+    
 $("#xcon").click(function(){
             $("#contact").slideUp(400);
            });
