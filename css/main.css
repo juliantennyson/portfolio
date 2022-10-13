@@ -310,7 +310,7 @@ body{
 }
 
 #symposeumpg{
-    background-image:url(images/symposeum/DSC06802.jpg);
+    background-image:url(images/symposeum/IMG_8948.jpg);
     background-size:130%;
     background-position:top;
     filter:blur(40)
@@ -472,13 +472,13 @@ color:white;
     width:100%;
     background-size:996px;
     background-position:center;
-    transition: background .26s cubic-bezier(.66,.02,.55,.96), height .26s cubic-bezier(.66,.02,.55,.96);
+    transition: background .15s cubic-bezier(.66,.02,.55,.96), height .15s cubic-bezier(.66,.02,.55,.96);
 }
 
 .coverwrap{
     opacity:0;
     background-color:#f93;
-    transition:opacity .26s cubic-bezier(.66,.02,.55,.96);
+    transition:opacity .15s cubic-bezier(.66,.02,.55,.96);
     width:100%;
     height:100%;
 }
@@ -492,7 +492,7 @@ color:white;
     font-size:4em;
     color:white;
     font-family: 'IBM Plex Mono', sans-serif;
-    transition:opacity .26s cubic-bezier(.66,.02,.55,.96),top .26s cubic-bezier(.66,.02,.55,.96);
+    transition:opacity .15s cubic-bezier(.66,.02,.55,.96),top .15s cubic-bezier(.66,.02,.55,.96);
 }
 
 .sectionsubtitle{
@@ -514,11 +514,11 @@ font-size:20px; !important;
 }
 
 .embiggen{
-    height:50vh;
+    height:40vh;
 }
 
 .enshorten{
-    height:12.5vh;
+    height:15vh;
 }
 
 
