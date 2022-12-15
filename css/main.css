@@ -795,6 +795,12 @@ background-image:url(images/konabanner.jpg)
 background-image:url(images/flymabanner.gif)
 }
 
+/** PIXELATOR **/
+
+#pixelator{
+background-image:url(images/pixelatorbanner.gif);
+}
+
 /** SOCIAL MEDIA LINKS **/
 
 #socmed{
