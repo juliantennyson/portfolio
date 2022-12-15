@@ -15,8 +15,16 @@
                     </div>
                     <div class="row">
                    
+<<<<<<< Updated upstream
                     
                     <img id="me" class="twelve columns" src="css/images/1.png" width="100%">
+=======
+                     <img src="css/images/1.png" width="100%" id="me" alt="a picture of me">
+<!--
+                    <a href="css/images/julian.jpg" data-lightbox="me" data-title="A Picture of Yours Truly">
+                    <img id="mejpg" class="twelve columns" src="css/images/julian.jpg" width="100%"></a>
+-->
+>>>>>>> Stashed changes
                     </div><div class="row">
                     <br><br>
                      <p id="aboutme" class="aexplanation twelve columns">
@@ -142,6 +150,7 @@
              
 
 <script>
+<<<<<<< Updated upstream
 
 $("#me").mouseenter(function(){
     
@@ -155,6 +164,16 @@ $("#me").mouseleave(function(){
 });
       
     
+=======
+       
+$("#me").mouseenter(function(){
+    $("#me").attr("src","css/images/2.png");
+});
+       
+$("#me").mouseleave(function(){
+    $("#me").attr("src","css/images/1.png");
+});
+>>>>>>> Stashed changes
 $("#xcon").click(function(){
             $("#contact").slideUp(400);
            });
@@ -165,7 +184,7 @@ $("#xabout").click(function(){
            
 $("#xmore").click(function(){
             $("#expand").slideUp(400);
-})
+});
 
 if(top.location.pathname === '/index.html' || top.location.pathname === '/' ){
 
